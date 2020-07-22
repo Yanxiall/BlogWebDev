@@ -27,7 +27,7 @@ public class KaptchaController {
         byte[] captchaOutputStream;
         ByteArrayOutputStream imgOutputStream = new ByteArrayOutputStream();
         try {
-            //生产验证码字符串并保存到session中
+            //generate captcha code and save it into session
             String verifyCode = captchaProducer.createText();
             httpServletRequest.getSession().setAttribute("verifyCode", verifyCode);
             BufferedImage challenge = captchaProducer.createImage(verifyCode);
@@ -46,15 +46,17 @@ public class KaptchaController {
         responseOutputStream.flush();
         responseOutputStream.close();
     }
+
+    // verify the Captcha code
     @GetMapping("/verify")
     @ResponseBody
     public String KaptchaVerify(@RequestParam("code") String code, HttpSession httpsession){
         if(StringUtils.isEmpty(code)){
-            return "captcha can not be empty";
+            return "Captcha can not be empty";
         }
         String captcha = httpsession.getAttribute("verifyCode") + "";
         if(StringUtils.isEmpty(captcha) || !code.equals(captcha)){
-            return "captcha is wrong";
+            return "Captcha is wrong";
         }
         else{
             return "verify succeed";
