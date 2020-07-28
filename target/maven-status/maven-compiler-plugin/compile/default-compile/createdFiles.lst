@@ -1,3 +1,5 @@
 com/HYX/webDev/controller/common/KaptchaController.class
 com/HYX/webDev/util/MD5Util.class
+com/HYX/webDev/config/MyBlogWebMvcConfigurer.class
 com/HYX/webDev/controller/admin/AdminController.class
+com/HYX/webDev/interceptor/AdminLoginInterceptor.class

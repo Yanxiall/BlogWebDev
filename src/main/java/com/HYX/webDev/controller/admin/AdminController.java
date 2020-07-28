@@ -1,33 +1,5 @@
 package com.HYX.webDev.controller.admin;
-/*
-import com.HYX.webDev.entity.AdminUser;
-import com.HYX.webDev.service.AdminUserService;
-import com.HYX.webDev.service.Impl.AdminUserServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
-
-@Controller
-@ResponseBody
-
-public class AdminController {
-    @Resource
-    private AdminUserService adminUserService;
-    @RequestMapping(value="/login", method= RequestMethod.GET)
-    public String AdminController(@RequestParam(required=false) String username, @RequestParam(required=false) String password) {
-
-        AdminUser adminUser = adminUserService.login(username, password);
-        System.out.println(adminUser.getNickName());
-        return "login";
-    }
-
-}
-*/
 import com.HYX.webDev.entity.AdminUser;
 import com.HYX.webDev.service.AdminUserService;
 import com.HYX.webDev.service.Impl.AdminUserServiceImpl;
@@ -83,32 +55,7 @@ public class AdminController {
         return "admin/index";
     }
 
- /*
 
-        String kaptchaCode = session.getAttribute("verifyCode") + "";
-        if (StringUtils.isEmpty(kaptchaCode) || !VerifyCode.equals(kaptchaCode)) {
-            session.setAttribute("errorMsg", "验证码错误");
-            return "admin/login";
-        }
-        AdminUser adminUser = adminUserService.login(userName, password);
-        if (adminUser != null) {
-            session.setAttribute("loginUser", adminUser.getNickName());
-            session.setAttribute("loginUserId", adminUser.getAdminUserId());
-            //session过期时间设置为7200秒 即两小时
-            session.setMaxInactiveInterval(60 * 60 * 2);
-            return "redirect:/admin/index";
-        } else {
-            session.setAttribute("errorMsg", "登陆失败");
-            return "admin/login";
-        }
-    }
-
-    @GetMapping({"", "/", "/index", "/index.html"})
-    public String index() {
-        return "admin/index";
-    }
-
-  */
 }
 
 
