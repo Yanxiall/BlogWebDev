@@ -8,6 +8,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 
@@ -47,15 +48,59 @@ public class AdminController {
             session.setAttribute("errorMsg", "userName or password is wrong");
             return "admin/login";
         }
-
-
     }
     @GetMapping({"", "/", "/index", "/index.html"})
     public String index() {
         return "admin/index";
     }
 
+    @GetMapping("/profile")
+    public String profile(HttpServletRequest request) {
+        Integer loginUserId = (int) request.getSession().getAttribute("loginUserId");
+        AdminUser adminUser = adminUserService.getUserDetailById(loginUserId);
+        if (adminUser == null) {
+            return "admin/login";
+        }
+        request.setAttribute("path", "profile");
+        request.setAttribute("loginUserName", adminUser.getLoginUserName());
+        request.setAttribute("nickName", adminUser.getNickName());
+        return "admin/profile";
+    }
+    @PostMapping("/profile/password")
+    @ResponseBody
+    public String passwordUpdate(HttpServletRequest request, @RequestParam("originalPassword") String originalPassword,
+                                 @RequestParam("newPassword") String newPassword) {
 
+
+        Integer loginUserId = (int) request.getSession().getAttribute("loginUserId");
+        if (adminUserService.updatePassword(loginUserId, originalPassword, newPassword)) {
+            //clear the data in session
+            request.getSession().removeAttribute("loginUserId");
+            request.getSession().removeAttribute("loginUser");
+            request.getSession().removeAttribute("errorMsg");
+            return "success";
+        } else {
+            return "fail";
+        }
+    }
+    @PostMapping("/profile/name")
+    @ResponseBody
+    public String nameUpdate(HttpServletRequest request, @RequestParam("UserName") String UserName,
+                             @RequestParam("NickName") String NickName) {
+
+        Integer loginUserId = (int) request.getSession().getAttribute("loginUserId");
+        if (adminUserService.updateName(loginUserId, UserName, NickName)) {
+            return "success";
+        } else {
+            return "fail";
+        }
+    }
+    @GetMapping("/logout")
+    public String logout(HttpSession session) {
+        session.removeAttribute("loginUser");
+        session.removeAttribute("loginUserId");
+        session.removeAttribute("errorMsg");
+        return "admin/login";
+    }
 }
-
 
