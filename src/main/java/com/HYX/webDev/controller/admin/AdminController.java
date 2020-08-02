@@ -95,6 +95,11 @@ public class AdminController {
             return "fail";
         }
     }
+    @GetMapping({"/category"})
+    public String category() {
+        return "admin/category";
+    }
+
     @GetMapping("/logout")
     public String logout(HttpSession session) {
         session.removeAttribute("loginUser");
@@ -102,5 +107,6 @@ public class AdminController {
         session.removeAttribute("errorMsg");
         return "admin/login";
     }
+
 }
 
