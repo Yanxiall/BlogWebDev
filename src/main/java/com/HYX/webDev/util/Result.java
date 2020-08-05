@@ -1,4 +1,4 @@
-package com.HYX.webDev.controller.common;
+package com.HYX.webDev.util;
 
 import java.io.Serializable;
 

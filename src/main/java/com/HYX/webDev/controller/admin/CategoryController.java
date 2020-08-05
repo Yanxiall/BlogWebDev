@@ -1,9 +1,8 @@
 package com.HYX.webDev.controller.admin;
 
-import com.HYX.webDev.controller.common.Constants;
-import com.HYX.webDev.controller.common.Result;
-import com.HYX.webDev.controller.common.ResultGenerator;
-import com.HYX.webDev.service.AdminUserService;
+import com.HYX.webDev.util.Constants;
+import com.HYX.webDev.util.Result;
+import com.HYX.webDev.util.ResultGenerator;
 import com.HYX.webDev.service.BlogCategoryService;
 import com.HYX.webDev.util.PageUtil;
 import org.springframework.stereotype.Controller;
@@ -18,6 +17,7 @@ import java.util.Map;
 public class CategoryController {
     @Resource
     private BlogCategoryService blogCategoryService;
+
     @GetMapping({"/category"})
     public String category() {
         return "admin/category";
@@ -31,6 +31,7 @@ public class CategoryController {
         }
         //query the page which is searched
         PageUtil pageUtil = new PageUtil(params);
+        //return the frontend data
         return ResultGenerator.genSuccessResult(blogCategoryService.getCategoryPage(pageUtil));
     }
 }

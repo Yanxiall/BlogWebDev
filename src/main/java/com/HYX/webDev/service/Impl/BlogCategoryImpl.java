@@ -16,9 +16,9 @@ public class BlogCategoryImpl implements BlogCategoryService {
     private BlogCategoryMapper blogCategoryMapper;
     @Override
     public PageResult getCategoryPage(PageUtil pageUtil) {
-        //当前页码中的数据列表
+        //the data of the current page
         List<BlogCategory> categories = blogCategoryMapper.findCategory(pageUtil);
-        //数据总条数 用于计算分页数据
+        //the number of all records
         int total = blogCategoryMapper.getTotalCategory(pageUtil);
         PageResult pageResult = new PageResult(categories, total, pageUtil.getLimit(), pageUtil.getPage());
         return pageResult;

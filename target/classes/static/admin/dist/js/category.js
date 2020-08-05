@@ -3,6 +3,7 @@ $(function () {
         url: '/admin/category/list',
         //the datatype which is sent to the server
         datatype: "json",
+        //the columns which shows in the website
         colModel: [
             {label: 'categoryId', name: 'categoryId', index: 'categoryId', width: 50, hidden: true, key: true},
             {label: 'categoryName', name: 'categoryName', index: 'categoryName', sortable: false, width: 50},
@@ -26,14 +27,13 @@ $(function () {
             total: "data.totalPage",
             records: "data.totalCount"
         },
-        //names which is sent to the server
+        //parameter names which is sent to the server
         prmNames: {
             page: "page",
             rows: "limit",
             order: "order"
         },
     });
-
     $(window).resize(function () {
         $("#jqGrid").setGridWidth($(".card-body").width());
     });

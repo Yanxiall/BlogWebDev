@@ -2,28 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18e893a1-4326-4ffe-b0a2-da190621c18a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/AdminUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/AdminUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/common/ResultGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/ResultGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/AdminUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/AdminUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/AdminUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/AdminUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/category.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

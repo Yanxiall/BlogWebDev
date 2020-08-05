@@ -1,20 +1,13 @@
 package com.HYX.webDev.controller.admin;
 
-import com.HYX.webDev.controller.common.Constants;
-import com.HYX.webDev.controller.common.Result;
-import com.HYX.webDev.controller.common.ResultGenerator;
 import com.HYX.webDev.entity.AdminUser;
 import com.HYX.webDev.service.AdminUserService;
-import com.HYX.webDev.service.Impl.AdminUserServiceImpl;
-import com.HYX.webDev.util.PageUtil;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.Map;
 
 
 @Controller

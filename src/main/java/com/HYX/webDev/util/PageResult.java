@@ -17,11 +17,11 @@ public class PageResult implements Serializable {
 
 
     public PageResult(List<?> list, int totalCount, int pageSize, int currPage) {
-        this.list = list;
-        this.totalCount = totalCount;
-        this.pageSize = pageSize;
-        this.currPage = currPage;
-        this.totalPage = (int)Math.ceil((double)totalCount/pageSize);
+        this.list = list;//the data list of query
+        this.totalCount = totalCount;//the total records
+        this.pageSize = pageSize;//the number of records of every page
+        this.currPage = currPage;//the query page
+        this.totalPage = (int)Math.ceil((double)totalCount/pageSize);//the total pages
     }
 
     public int getTotalCount() {

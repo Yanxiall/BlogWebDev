@@ -1,17 +1,12 @@
 package com.HYX.webDev.service.Impl;
 
 import com.HYX.webDev.dao.AdminUserMapper;
-import com.HYX.webDev.dao.BlogCategoryMapper;
 import com.HYX.webDev.entity.AdminUser;
-import com.HYX.webDev.entity.BlogCategory;
 import com.HYX.webDev.service.AdminUserService;
 import com.HYX.webDev.util.MD5Util;
-import com.HYX.webDev.util.PageResult;
-import com.HYX.webDev.util.PageUtil;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
-import java.util.List;
+
 
 @Service
 public class AdminUserServiceImpl implements AdminUserService {

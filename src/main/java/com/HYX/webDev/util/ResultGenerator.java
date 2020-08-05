@@ -1,7 +1,6 @@
-package com.HYX.webDev.controller.common;
+package com.HYX.webDev.util;
 
 import org.springframework.util.StringUtils;
-
 
 public class ResultGenerator {
     private static final String DEFAULT_SUCCESS_MESSAGE = "SUCCESS";
