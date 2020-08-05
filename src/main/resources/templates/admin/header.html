@@ -17,6 +17,8 @@
     <link rel="stylesheet" th:href="@{/admin/plugins/jqgrid-5.3.0/ui.jqgrid-bootstrap4.css}"/>
     <!-- overlayScrollbars -->
     <link rel="stylesheet" th:href="@{/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css}">
+    <!--JqGrid-->
+    <link rel="stylesheet" th:href="@{/admin/plugins/jqGrid-5.3.0/css/ui.jqgrid-bootstrap4.css}"/>
 </head>
 <!-- Navbar -->
 <nav class="main-header navbar navbar-expand navbar-white navbar-light" th:fragment="nav-fragment">
@@ -31,26 +33,27 @@
         <!-- About the author -->
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
-                <i class="fa fa-user">&nbsp;&nbsp;Author</i>
+                <i class="fas fa-user">&nbsp;&nbspAuthor</i>
             </a>
             <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
-                <div class="dropdown-divider"></div>
+                <div class="dropdown-divider" ></div>
                 <a href="#" class="dropdown-item">
-                    <i class="fa fa-user mr-2"></i> Name
+                    <i class="fas fa-user mr-2"></i>Name
                     <span class="float-right text-muted text-sm">Yanxia He</span>
                 </a>
                 <div class="dropdown-divider"></div>
                 <a href="#" class="dropdown-item">
-                    <i class="fa fa-user-secret mr-2"></i>Career Objective
+                    <i class="fas fa-briefcase mr-2"></i>Career Objective
                     <span class="float-right text-muted text-sm">SDE</span>
                 </a>
                 <div class="dropdown-divider"></div>
                 <a href="#" class="dropdown-item">
-                    <i class="far fa-address-card mr-2"></i> Email
+                    <i class="fas fa-envelope mr-2"></i> Email
                     <span class="float-right text-muted text-sm">yanxia_he@126.com</span>
                 </a>
             </div>
         </li>
     </ul>
 </nav>
+<script src="https://kit.fontawesome.com/684fe6b1fc.js" crossorigin="anonymous"></script>
 </html>
