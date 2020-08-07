@@ -7,6 +7,11 @@
     <div th:replace="admin/sidebar::sidebar-fragment"></div>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+        <!-- Content Header -->
+        <div class="content-header">
+            <div class="container-fluid">
+            </div><!-- /.container-fluid -->
+        </div>
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
@@ -14,24 +19,67 @@
                     <div class="card-header">
                         <h3 class="card-title">Categories Management</h3>
                     </div>
-                    <div class="grid-btn" id="CategoryAdd">
-                        <button class="btn btn-info">
+                    <div class="card-body">
+                        <div class="grid-btn">
+                           <button class="btn btn-info" id="CategoryAdd" onclick="CategoryAdd()">
                             <i class="fa fa-plus"></i>&nbsp;Add
-                        </button>
-                        <button class="btn btn-info" id="CategoryModify">
-                            <i class="fa fa-pencil-square-o"></i>&nbsp;Modify
-                        </button>
-                        <button class="btn btn-danger" id="CategoryDelete">
-                            <!--<i class="fa fa-trash-o"></i>&nbsp;Delete -->
-                            <i class="fas fa-trash-alt"></i>&nbsp;Delete
-                        </button>
+                           </button>
+                           <button class="btn btn-info" id="CategoryModify" onclick="CategoryModify()">
+                             <i class="fa fa-pencil-square-o"></i>&nbsp;Modify
+                           </button>
+                           <button class="btn btn-danger" id="CategoryDelete" onclick="CategoryDelete()">
+                             <i class="fas fa-trash-alt"></i>&nbsp;Delete
+                            </button>
+                        </div>
+                        <table id="jqGrid" class="table table-bordered"></table>
+                        <div id="jqGridPager"></div>
                     </div>
                 </div>
-                <table id="jqGrid" class="table table-bordered"></table>
-                <div id="jqGridPager"></div>
             </div>
         </section>
         <!-- /.content -->
+        <section class="content">
+            <!--Modal-->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                x
+                            </button>
+                            <h6 class="modal-title" id="categoryModalLabel">Modal</h6>
+                        </div>
+                        <div class="modal-body">
+                            <form id="categoryForm" onsubmit="return false;">
+                                <div class="form-group">
+                                    <input type="hidden" class="form-control" id="CategoryId" name="CategoryId">
+                                </div>
+                                <div class="form-group">
+                                    <label for="CategoryName" class="control-label">Category Name</label>
+                                    <input type="text"  required="true" class="form-control" id="CategoryName" name="CategoryName" placeholder="Enter Category Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="CategoryIcon" class="control-label">Category Icon</label>
+                                    <input type="hidden" class="form-control" id="CategoryIcon" name="CategoryIcon">
+                                    <div class="col-sm-4">
+                                        <img src="/admin/dist/img/img-upload.png" id="categoryIconImg" name="categoryIconImg" />
+                                        <button type="button" class="btn btn-secondary" style="margin-top: 5px;margin-bottom: 5px;" id="ChangeIcon">
+                                            <i class="fa fa-random"></i>&nbsp;Change Icon</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                            </button>
+                            <button type="button" class="btn btn-primary" id="saveButton">
+                                Submit
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+        </section>
     </div>
     <!-- /.content-wrapper -->
     <div th:replace="admin/footer::footer-fragment"></div>
@@ -54,5 +102,7 @@
 <!-- jqgrid -->
 <script th:src="@{/admin/plugins/jqGrid-5.3.0/js/jquery.jqGrid.min.js}"></script>
 <script th:src="@{/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-en.js}"></script>
+<!-- sweetalert -->
+<script th:src="@{/admin/plugins/sweetalert/sweetalert.min.js}"></script>
 </body>
 </html>

@@ -90,3 +90,34 @@ function PasswordStrength(password){
                 document.getElementById("msg").innerHTML = strength;
                 document.getElementById("msg").style.color = color;
 }
+
+function GetSelectedRow(){
+    var grid = $("#jqGrid");
+    var id = grid.getGridParam("selrow");
+    if(id == null){
+       swal("Please select one record!",{
+           icon: "warning",
+       });
+       return;
+    }
+    var multiid = grid.getGridParam("selarrrow");
+    if(multiid.length > 1){
+       swal("More then one record are selected!",{
+                  icon: "warning",
+              });
+              return;
+    }
+    return multiid[0];
+}
+
+function GetSelectedRowWithoutAlert(){
+    var grid = $("#jqGrid");
+    var multiid = grid.getGridParam("selarrrow");
+    if(multiid == null){
+        return;
+    }
+    if(multiid.length > 1){
+         return;
+    }
+    return multiid[0];
+}

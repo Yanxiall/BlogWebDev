@@ -7,7 +7,7 @@ $(function () {
         colModel: [
             {label: 'categoryId', name: 'categoryId', index: 'categoryId', width: 50, hidden: true, key: true},
             {label: 'categoryName', name: 'categoryName', index: 'categoryName', sortable: false, width: 50},
-            {label: 'categoryIcon', name: 'categoryIcon', index: 'categoryIcon', sortable: false, width: 50},
+            {label: 'categoryIcon', name: 'categoryIcon', index: 'categoryIcon', sortable: false, width: 50,formatter:imgFormatter},
             {label: 'createTime', name: 'createTime', index: 'createTime', sortable: false, width: 60}
         ],
         height: 485,
@@ -37,4 +37,119 @@ $(function () {
     $(window).resize(function () {
         $("#jqGrid").setGridWidth($(".card-body").width());
     });
+    $("#ChangeIcon").click(function(){
+      var rand = parseInt(Math.random() * 20 + 1);
+      $("#categoryIconImg").attr("src", '/admin/dist/img/category/' + rand + ".png");
+      $("#CategoryIcon").val('/admin/dist/img/category/' + rand + ".png")
+    });
 });
+function CategoryAdd(){
+ reset();
+ $(".modal-title").html('Add Category');
+ $("#myModal").modal('show');
+}
+function imgFormatter(cellvalue) {
+    return "<a href='" + cellvalue + "'> <img src='" + cellvalue + "' height=\"64\" width=\"64\" alt='icon'/></a>";
+}
+
+function CategoryModify(){
+  var categoryId = GetSelectedRow();
+  if(categoryId == null){
+     return;
+  }
+  $("#CategoryId").val(categoryId);
+  $(".modal-title").html('Modify Category');
+  $("#myModal").modal('show');
+  $.ajax({
+    type: "GET",
+    url:"/admin/category/info?categoryId=" + categoryId,
+    dataType:"json",
+    success: function(result){
+      if(result.resultCode == 200 && result.data != null){
+         console.log(result.data.categoryName);
+         $("#CategoryId").val(result.data.CategoryId);
+         $("#CategoryName").val(result.data.categoryName);
+         $("#categoryIconImg").attr("src",result.data.categoryIcon);
+      }
+    }
+  });
+}
+function reset() {
+    $("#CategoryName").val('');
+    $("#categoryIconImg").attr("src", '/admin/dist/img/img-upload.png');
+    $("#CategoryIcon").val('');
+}
+//reload JaGrid to update the page
+function reload() {
+    var page = $("#jqGrid").jqGrid('getGridParam', 'page');
+    $("#jqGrid").jqGrid('setGridParam', {
+        page: page
+    }).trigger("reloadGrid");
+}
+$("#saveButton").click(function (){
+    var categoryId = GetSelectedRowWithoutAlert();
+    url= "/admin/category/add";
+    if(categoryId != null){
+     url= "/admin/category/modify";
+     $("#CategoryId").val(categoryId);
+    }
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: $("#categoryForm").serialize(),
+        dataType:"json",
+        success: function(result)
+        {
+              if(result.resultCode == 200)
+              {
+                   $('#myModal').modal('hide');
+                  swal("Save success!",{
+                  icon:"success",
+                  });
+                  reload();
+              }
+               else
+              {
+                 $('#myModal').modal('hide');
+                 swal(result.message,{
+                       icon:"error",
+                 });
+              }
+        }
+    });
+})
+
+function CategoryDelete(){
+   reset();
+   var CategoryId = GetSelectedRowWithoutAlert();
+   swal({
+              title: "Delete category",
+              text: "Are you sure to delete the selected category",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+   }).then((flag) =>
+   {
+       $.ajax({
+            type: "GET",
+            url: "/admin/category/delete?CategoryId=" + CategoryId,
+            dataType:"json",
+            success: function(result)
+            {
+                  if(result.resultCode == 200)
+                  {
+                       swal("Delete success!",{
+                            icon:"success",
+                                        });
+                       reload();
+                  }
+                   else
+                  {
+                      swal(result.message,{
+                           icon:"error",
+                      });
+                  }
+            }
+        });
+   });
+}

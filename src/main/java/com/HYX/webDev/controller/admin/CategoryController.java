@@ -34,4 +34,64 @@ public class CategoryController {
         //return the frontend data
         return ResultGenerator.genSuccessResult(blogCategoryService.getCategoryPage(pageUtil));
     }
+    @RequestMapping(value ="/category/add", method = RequestMethod.POST)
+    @ResponseBody
+    public Result add(@RequestParam String CategoryName,@RequestParam String CategoryIcon ){
+        if(StringUtils.isEmpty(CategoryName))
+        {
+            return ResultGenerator.genFailResult("Please input category name!");
+        }
+        if( StringUtils.isEmpty(CategoryIcon)){
+            return ResultGenerator.genFailResult("Please select a category icon!");
+        }
+        if(blogCategoryService.AddCategory(CategoryName,CategoryIcon)){
+            return ResultGenerator.genSuccessResult();
+        }
+        else{
+            return ResultGenerator.genFailResult("Duplicate Category!");
+        }
+
+    }
+    @RequestMapping(value ="/category/modify", method = RequestMethod.POST)
+    @ResponseBody
+    public Result modify(@RequestParam Integer CategoryId, @RequestParam String CategoryName,@RequestParam String CategoryIcon ){
+        if (CategoryId == null || CategoryId < 1) {
+            return ResultGenerator.genFailResult("invalid parameter!");
+        }
+        if(StringUtils.isEmpty(CategoryName))
+        {
+            return ResultGenerator.genFailResult("Please input category name!");
+        }
+        if( StringUtils.isEmpty(CategoryIcon)){
+            return ResultGenerator.genFailResult("please select a category icon!");
+        }
+        if(blogCategoryService.ModifyCategory(CategoryId,CategoryName,CategoryIcon)){
+            return ResultGenerator.genSuccessResult();
+        }
+        else{
+            return ResultGenerator.genFailResult("Duplicate Category!");
+        }
+    }
+    @RequestMapping(value ="/category/info", method = RequestMethod.GET)
+    @ResponseBody
+    public Result info(@RequestParam Integer categoryId){
+
+        return ResultGenerator.genSuccessResult(blogCategoryService.CategoryInfo(categoryId));
+    }
+    @RequestMapping(value ="/category/delete", method = RequestMethod.GET)
+    @ResponseBody
+    public Result modify(@RequestParam Integer CategoryId ){
+        if (CategoryId == null || CategoryId < 1) {
+            return ResultGenerator.genFailResult("invalid parameter!");
+        }
+        if(blogCategoryService.DeleteCategory(CategoryId)){
+            return ResultGenerator.genSuccessResult();
+        }
+        else{
+            return ResultGenerator.genFailResult("Delete Fails!");
+        }
+    }
 }
+
+
+

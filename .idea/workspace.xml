@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18e893a1-4326-4ffe-b0a2-da190621c18a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="726dd85f-3d1c-4996-95c7-f3283bc4cae2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/common/ResultGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/ResultGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogCategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/AdminUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/AdminUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/09.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogCategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +42,14 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1fft2bHhCnlDL5XFkstzjMpkMOn" />
+  <component name="ProjectId" id="1fj1ENyxALCQerZdDDuSJB4sh4P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,7 +57,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -54,12 +65,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="18e893a1-4326-4ffe-b0a2-da190621c18a" name="Default Changelist" comment="" />
-      <created>1596620768193</created>
+      <changelist id="726dd85f-3d1c-4996-95c7-f3283bc4cae2" name="Default Changelist" comment="" />
+      <created>1596716577512</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1596620768193</updated>
+      <updated>1596716577512</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="330" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596739783063">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="330" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/65.24.1301.744@65.24.1301.744" timestamp="1596739783063" />
   </component>
 </project>

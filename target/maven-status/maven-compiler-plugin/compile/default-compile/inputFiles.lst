@@ -1,9 +1,13 @@
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/Constants.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/AdminUser.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/ResultGenerator.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/PageUtil.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/BlogCategoryService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/MyBlogApplication.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/PageResult.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/AdminController.java
-/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/common/ResultGenerator.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/Result.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/BlogCategoryMapper.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/config/MyBlogWebMvcConfigurer.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/config/KaptchaConfig.java
@@ -12,7 +16,6 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/MD5Util.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/AdminUserService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/interceptor/AdminLoginInterceptor.java
-/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/common/Result.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/AdminUserMapper.java
-/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/common/Constants.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/Impl/AdminUserServiceImpl.java
