@@ -88,7 +88,7 @@ public class CategoryController {
             return ResultGenerator.genSuccessResult();
         }
         else{
-            return ResultGenerator.genFailResult("Delete Fails!");
+            return ResultGenerator.genFailResult("Delete Fail!");
         }
     }
 }

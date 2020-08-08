@@ -66,10 +66,10 @@ function CategoryModify(){
     dataType:"json",
     success: function(result){
       if(result.resultCode == 200 && result.data != null){
-         console.log(result.data.categoryName);
          $("#CategoryId").val(result.data.CategoryId);
          $("#CategoryName").val(result.data.categoryName);
          $("#categoryIconImg").attr("src",result.data.categoryIcon);
+         $("#CategoryIcon").val(result.data.categoryIcon)
       }
     }
   });
@@ -121,15 +121,19 @@ $("#saveButton").click(function (){
 
 function CategoryDelete(){
    reset();
-   var CategoryId = GetSelectedRowWithoutAlert();
+   var CategoryId = GetSelectedRow();
+   if(CategoryId == null){
+        return;
+     }
    swal({
-              title: "Delete category",
-              text: "Are you sure to delete the selected category",
-              icon: "warning",
-              buttons: true,
-              dangerMode: true,
-   }).then((flag) =>
+               title: "Are you sure?",
+               text: "Once deleted, you will not be able to recover this category!",
+               icon: "warning",
+               buttons: true,
+               dangerMode: true,
+   }).then((willDelete) =>
    {
+      if (willDelete) {
        $.ajax({
             type: "GET",
             url: "/admin/category/delete?CategoryId=" + CategoryId,
@@ -138,9 +142,9 @@ function CategoryDelete(){
             {
                   if(result.resultCode == 200)
                   {
-                       swal("Delete success!",{
-                            icon:"success",
-                                        });
+                       swal("Poof! Your category has been deleted!", {
+                             icon: "success",
+                           });
                        reload();
                   }
                    else
@@ -151,5 +155,8 @@ function CategoryDelete(){
                   }
             }
         });
+       } else {
+           swal("Your category is safe!");
+         }
    });
 }

@@ -2,37 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="726dd85f-3d1c-4996-95c7-f3283bc4cae2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/AdminUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/AdminUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/img/category/09.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/sweetalert.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/sweetalert.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogCategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/public.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
