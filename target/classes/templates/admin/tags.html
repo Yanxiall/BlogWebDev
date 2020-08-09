@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/header::header-fragment"></head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+    <div th:replace="admin/header::nav-fragment"></div>
+    <div th:replace="admin/sidebar::sidebar-fragment"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header -->
+        <div class="content-header">
+            <div class="container-fluid">
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="card card-primary card-outline">
+                    <div class="card-header">
+                        <h3 class="card-title">Tags Management</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="grid-btn">
+                            <button class="btn btn-info" id="TagAdd" onclick="TagAdd()">
+                                <i class="fa fa-plus"></i>&nbsp;Add
+                            </button>
+                            <button class="btn btn-danger" id="TagDelete" onclick="TagDelete()">
+                                <i class="fas fa-trash-alt"></i>&nbsp;Delete
+                            </button>
+                        </div>
+                        <table id="jqGrid" class="table table-bordered"></table>
+                        <div id="jqGridPager"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+        <section class="content">
+            <!--Modal-->
+            <div class="modal fade" id="TagModal" tabindex="-1" role="dialog" aria-labelledby="TagModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                x
+                            </button>
+                            <h6 class="modal-title" id="TagModalLabel">Modal</h6>
+                        </div>
+                        <div class="modal-body">
+                            <form id="TagForm" onsubmit="return false;">
+                                <div class="form-group">
+                                    <input type="hidden" class="form-control" id="TagId" name="TagId">
+                                </div>
+                                <div class="form-group">
+                                    <label for="TagName" class="control-label">Tag Name</label>
+                                    <input type="text"  required="true" class="form-control" id="TagName" name="TagName" placeholder="Enter Tag Name">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                            </button>
+                            <button type="button" class="btn btn-primary" id="saveButton">
+                                Submit
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+        </section>
+    </div>
+    <!-- /.content-wrapper -->
+    <div th:replace="admin/footer::footer-fragment"></div>
+</div>
+
+<!-- jQuery -->
+<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script th:src="@{/admin/plugins/jQueryUI/jquery-ui.min.js}"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<!-- Bootstrap 4 -->
+<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/admin/dist/js/adminlte.js}"></script>
+<!--<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+<script src="https://kit.fontawesome.com/684fe6b1fc.js" crossorigin="anonymous"></script>
+<script th:src="@{/admin/dist/js/profile.js}"></script>
+<script th:src="@{/admin/dist/js/public.js}"></script>
+<script th:src="@{/admin/dist/js/tag.js}"></script>
+<!-- jqgrid -->
+<script th:src="@{/admin/plugins/jqGrid-5.3.0/js/jquery.jqGrid.min.js}"></script>
+<script th:src="@{/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-en.js}"></script>
+<!-- sweetalert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

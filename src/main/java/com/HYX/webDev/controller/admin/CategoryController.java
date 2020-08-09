@@ -78,13 +78,13 @@ public class CategoryController {
 
         return ResultGenerator.genSuccessResult(blogCategoryService.CategoryInfo(categoryId));
     }
-    @RequestMapping(value ="/category/delete", method = RequestMethod.GET)
+    @RequestMapping(value ="/category/delete", method = RequestMethod.POST)
     @ResponseBody
-    public Result modify(@RequestParam Integer CategoryId ){
-        if (CategoryId == null || CategoryId < 1) {
+    public Result delete(@RequestBody Integer[] ids){
+        if (ids.length < 1) {
             return ResultGenerator.genFailResult("invalid parameter!");
         }
-        if(blogCategoryService.DeleteCategory(CategoryId)){
+        if(blogCategoryService.DeleteCategoryBatch(ids)){
             return ResultGenerator.genSuccessResult();
         }
         else{

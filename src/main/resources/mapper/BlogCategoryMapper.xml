@@ -13,22 +13,29 @@
     category_id, category_name, category_icon, category_rank, is_deleted, create_time
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from tb_blog_category
     where category_id = #{categoryId,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from tb_blog_category
-    where category_id = #{categoryId,jdbcType=INTEGER}
-  </delete>
+  <update id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    update tb_blog_category SET is_deleted=1
+    where category_id = #{categoryId,jdbcType=INTEGER} AND is_deleted=0
+  </update>
+  <update id="deleteBatch" parameterType="java.lang.Integer">
+  update tb_blog_category SET is_deleted=1
+  where category_id in
+   <foreach item="id" collection="array" open="(" separator="," close=")">
+    #{id}
+   </foreach>
+  </update>
   <insert id="insert" parameterType="com.HYX.webDev.entity.BlogCategory">
-    insert into tb_blog_category (category_id, category_name, category_icon, 
-      category_rank, is_deleted, create_time
-      )
-    values (#{categoryId,jdbcType=INTEGER}, #{categoryName,jdbcType=VARCHAR}, #{categoryIcon,jdbcType=VARCHAR}, 
-      #{categoryRank,jdbcType=INTEGER}, #{isDeleted,jdbcType=TINYINT}, #{createTime,jdbcType=TIMESTAMP}
-      )
+    insert into tb_blog_category (category_id, category_name, category_icon,
+    category_rank, is_deleted, create_time
+    )
+    values (#{categoryId,jdbcType=INTEGER}, #{categoryName,jdbcType=VARCHAR}, #{categoryIcon,jdbcType=VARCHAR},
+    #{categoryRank,jdbcType=INTEGER}, #{isDeleted,jdbcType=TINYINT}, #{createTime,jdbcType=TIMESTAMP}
+    )
   </insert>
   <insert id="insertSelective" parameterType="com.HYX.webDev.entity.BlogCategory">
     insert into tb_blog_category
@@ -97,10 +104,10 @@
   <update id="updateByPrimaryKey" parameterType="com.HYX.webDev.entity.BlogCategory">
     update tb_blog_category
     set category_name = #{categoryName,jdbcType=VARCHAR},
-      category_icon = #{categoryIcon,jdbcType=VARCHAR},
-      category_rank = #{categoryRank,jdbcType=INTEGER},
-      is_deleted = #{isDeleted,jdbcType=TINYINT},
-      create_time = #{createTime,jdbcType=TIMESTAMP}
+    category_icon = #{categoryIcon,jdbcType=VARCHAR},
+    category_rank = #{categoryRank,jdbcType=INTEGER},
+    is_deleted = #{isDeleted,jdbcType=TINYINT},
+    create_time = #{createTime,jdbcType=TIMESTAMP}
     where category_id = #{categoryId,jdbcType=INTEGER}
   </update>
   <select id="findCategory" parameterType="Map" resultMap="BaseResultMap">
@@ -117,5 +124,4 @@
     select count(*) from tb_blog_category
     where is_deleted=0
   </select>
-
 </mapper>

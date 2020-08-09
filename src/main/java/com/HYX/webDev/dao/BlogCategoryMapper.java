@@ -15,10 +15,14 @@ public interface BlogCategoryMapper {
     int insertSelective(BlogCategory record);
 
     BlogCategory selectByPrimaryKey(Integer categoryId);
+
     List<BlogCategory> findCategory(Map param);
+
     int getTotalCategory(Map param);
 
     int updateByPrimaryKeySelective(BlogCategory record);
+
+    int deleteBatch(Integer[] ids);
 
     int updateByPrimaryKey(BlogCategory record);
 }

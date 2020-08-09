@@ -121,28 +121,30 @@ $("#saveButton").click(function (){
 
 function CategoryDelete(){
    reset();
-   var CategoryId = GetSelectedRow();
-   if(CategoryId == null){
+   var ids = GetSelectedMultiRows();
+   if(ids == null){
         return;
      }
    swal({
-               title: "Are you sure?",
-               text: "Once deleted, you will not be able to recover this category!",
-               icon: "warning",
-               buttons: true,
-               dangerMode: true,
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
    }).then((willDelete) =>
    {
       if (willDelete) {
        $.ajax({
-            type: "GET",
-            url: "/admin/category/delete?CategoryId=" + CategoryId,
+            type: "POST",
+            url: "/admin/category/delete",
+            contentType: "application/json",
+            data: JSON.stringify(ids),
             dataType:"json",
             success: function(result)
             {
                   if(result.resultCode == 200)
                   {
-                       swal("Poof! Your category has been deleted!", {
+                       swal("Poof! Delete success!", {
                              icon: "success",
                            });
                        reload();
@@ -156,7 +158,7 @@ function CategoryDelete(){
             }
         });
        } else {
-           swal("Your category is safe!");
+           swal("Delete canceled!");
          }
    });
 }

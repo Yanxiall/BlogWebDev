@@ -12,7 +12,7 @@
     admin_user_id, login_user_name, login_password, nick_name, locked
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from tb_admin_user
     where admin_user_id = #{adminUserId,jdbcType=INTEGER}
@@ -30,10 +30,10 @@
     where admin_user_id = #{adminUserId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.HYX.webDev.entity.AdminUser">
-    insert into tb_admin_user (admin_user_id, login_user_name, login_password, 
-      nick_name, locked)
-    values (#{adminUserId,jdbcType=INTEGER}, #{loginUserName,jdbcType=VARCHAR}, #{loginPassword,jdbcType=VARCHAR}, 
-      #{nickName,jdbcType=VARCHAR}, #{locked,jdbcType=TINYINT})
+    insert into tb_admin_user (admin_user_id, login_user_name, login_password,
+    nick_name, locked)
+    values (#{adminUserId,jdbcType=INTEGER}, #{loginUserName,jdbcType=VARCHAR}, #{loginPassword,jdbcType=VARCHAR},
+    #{nickName,jdbcType=VARCHAR}, #{locked,jdbcType=TINYINT})
   </insert>
   <insert id="insertSelective" parameterType="com.HYX.webDev.entity.AdminUser">
     insert into tb_admin_user
@@ -93,9 +93,9 @@
   <update id="updateByPrimaryKey" parameterType="com.HYX.webDev.entity.AdminUser">
     update tb_admin_user
     set login_user_name = #{loginUserName,jdbcType=VARCHAR},
-      login_password = #{loginPassword,jdbcType=VARCHAR},
-      nick_name = #{nickName,jdbcType=VARCHAR},
-      locked = #{locked,jdbcType=TINYINT}
+    login_password = #{loginPassword,jdbcType=VARCHAR},
+    nick_name = #{nickName,jdbcType=VARCHAR},
+    locked = #{locked,jdbcType=TINYINT}
     where admin_user_id = #{adminUserId,jdbcType=INTEGER}
   </update>
 </mapper>

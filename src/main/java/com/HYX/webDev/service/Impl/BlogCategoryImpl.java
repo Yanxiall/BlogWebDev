@@ -61,4 +61,11 @@ public class BlogCategoryImpl implements BlogCategoryService {
         }
         return false;
     }
+    @Override
+    public Boolean DeleteCategoryBatch(Integer[] ids){
+        if(blogCategoryMapper.deleteBatch(ids) > 0){
+            return true;
+        }
+        return false;
+    }
 }
