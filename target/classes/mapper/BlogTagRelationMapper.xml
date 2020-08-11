@@ -16,6 +16,17 @@
     from tb_blog_tag_relation
     where relation_id = #{relationId,jdbcType=BIGINT}
   </select>
+  <select id="SelectDistinctId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    DISTINCR(tag_id)
+    from tb_blog_tag_relation
+    where tag_id in
+    <foreach item="id" collection="array" open="(" separator="," close=")">
+      #{id}
+    </foreach>
+  </select>
+
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from tb_blog_tag_relation
     where relation_id = #{relationId,jdbcType=BIGINT}

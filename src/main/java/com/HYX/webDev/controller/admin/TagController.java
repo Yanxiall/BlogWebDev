@@ -59,7 +59,7 @@ public class TagController {
             return ResultGenerator.genSuccessResult();
         }
         else{
-            return ResultGenerator.genFailResult("Delete Fail!");
+            return ResultGenerator.genFailResult("Tag is related to the article!");
         }
     }
 }

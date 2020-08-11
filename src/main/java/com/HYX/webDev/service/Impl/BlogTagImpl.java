@@ -3,6 +3,7 @@ package com.HYX.webDev.service.Impl;
 
 
 import com.HYX.webDev.dao.BlogTagMapper;
+import com.HYX.webDev.dao.BlogTagRelationMapper;
 import com.HYX.webDev.entity.BlogCategory;
 import com.HYX.webDev.entity.BlogTag;
 import com.HYX.webDev.service.BlogTagService;
@@ -17,6 +18,8 @@ import java.util.List;
 public class BlogTagImpl implements BlogTagService {
     @Resource
     private BlogTagMapper blogTagMapper;
+    @Resource
+    private BlogTagRelationMapper blogTagRelationMapper;
     @Override
     public PageResult getTagPage(PageUtil pageUtil) {
         //the data of the current page
@@ -47,9 +50,9 @@ public class BlogTagImpl implements BlogTagService {
 
     @Override
     public Boolean DeleteTagBatch(Integer[] ids){
-        if(blogTagMapper.deleteBatch(ids) > 0){
-            return true;
+        if(blogTagRelationMapper.SelectDistinctId(ids).size() >= 1){
+            return false;
         }
-        return false;
+        return blogTagMapper.deleteBatch(ids) > 0;
     }
 }

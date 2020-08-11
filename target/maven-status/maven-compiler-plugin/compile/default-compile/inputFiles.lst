@@ -3,6 +3,7 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/MyBlogApplication.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/PageResult.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/Result.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/BlogEditController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/BlogCategoryMapper.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/config/MyBlogWebMvcConfigurer.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/BlogTagRelationMapper.java
@@ -16,6 +17,7 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/AdminUser.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/ResultGenerator.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/BlogTagRelation.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/MyBlogUtils.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/BlogCategoryService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/AdminController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/TagController.java
