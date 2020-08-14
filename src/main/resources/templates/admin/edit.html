@@ -16,12 +16,55 @@
                         <div class="card-body">
                             <!-- form start -->
                             <form id="BLogForm">
+                                <div class="form-group" id="blog-header" style="display:flex;">
+                                      <input type="text" class="form-control col-sm-6" placeholder="please input the Blog title" name="BlogTitle"/>&nbsp;&nbsp;
+                                      <input type="text" class="form-control"  placeholder="Blog Tag" name="BlogTag" id="BlogTag"/>
+                                </div>
+                                <div class="form-group" style="display:flex;" >
+                                    <input type="text" class="form-control col-sm-6" placeholder="Custom path" name="BlogSuburl" id="BlogSuburl"/>&nbsp;&nbsp;
+                                    <select
+                                            class="form-control select2"
+                                            style="width: 100%;"
+                                            id="blogCategoryId"
+                                            data-placeholder="Please select category..."
+                                    >
+                                        <th:block th:if="${null == categories}">
+                                            <option value="0" selected="selected">default category</option>
+                                        </th:block>
+                                        <th:block th:unless="${null == categories}">
+                                            <th:block th:each="c : ${categories}">
+                                                <option th:value="${c.categoryId}" th:text="${c.categoryName}">
+                                                </option>
+                                            </th:block>
+                                        </th:block>
+                                    </select>
+                                </div>
                                 <div class="form-group" id="blog-editormd">
                                     <textarea style="display:none;"></textarea>
                                 </div>
                                 <div class="form-group">
+                                    <img src="/admin/dist/img/img-upload.png" id="RandomCoverImg" name="RandomCoverImg" style="height: 120px;width: 160px;">
+                                </div>
+
+                                <div class="form-group">
+                                        <div  id="CoverimgButton" >
+                                          <button type="button" class="btn btn-info" style="margin-top: 5px;margin-bottom: 5px;" id="UploadCoverimg">
+                                            <i class="fas fa-image"></i>&nbsp;Upload Cover Image</button>&nbsp;&nbsp;
+                                          <button type="button" class="btn btn-info" style="margin-top: 5px;margin-bottom: 5px;" id="ChangeCoverimg">
+                                            <i class="fa fa-random"></i>&nbsp;Random Cover Image</button>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Post Status:&nbsp;</label>
+                                    <input type="radio" checked="true" id="publish"  value="1" name="PostStatus"/>&nbsp;Publish&nbsp;
+                                    <input type="radio"  id="Draft" name="PostStatus" />&nbsp;Draft&nbsp;
+                                </div>
+                                <div class="form-group float-right" id="BLogButton" style="display:flex;">
+                                    <button type="button" id="ReturnBlogList " onsubmit="return false;"
+                                            class="btn btn-secondary">Return Posts List
+                                    </button>&nbsp;&nbsp;
                                     <button type="button" id="SaveBlogButton" onsubmit="return false;"
-                                            class="btn btn-info float-right">save
+                                            class="btn btn-info">Save Post
                                     </button>
                                 </div>
                             </form>
@@ -52,6 +95,7 @@
 <script src="https://kit.fontawesome.com/684fe6b1fc.js" crossorigin="anonymous"></script>
 <script th:src="@{/admin/dist/js/profile.js}"></script>
 <script th:src="@{/admin/dist/js/public.js}"></script>
+<script th:src="@{/admin/dist/js/edit.js}"></script>
 <!-- jqgrid -->
 <script th:src="@{/admin/plugins/jqGrid-5.3.0/js/jquery.jqGrid.min.js}"></script>
 <script th:src="@{/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-en.js}"></script>
@@ -60,23 +104,11 @@
 <!-- Editor.md -->
 <script th:src="@{/admin/plugins/editor.md-master/editormd.min.js}"></script>
 <script th:src="@{/admin/plugins/editor.md-master/languages/en.js}"></script>
-<script type="text/javascript">
-  var blogEditor;
-  $(function () {
-      blogEditor = editormd("blog-editormd", {
-      width: "100%",
-      height: 640,
-      syncScrolling: "single",
-      path: "/admin/plugins/editor.md-master/lib/",
-      toolbarModes: "full",
-      /**configure image upload*/
-      imageUpload: true,
-      imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"], //the format of images
-      imageUploadURL: "/admin/blogs/md/uploadfile",
-      onload: function (obj) {
-            }
-    });
-  });
-</script>
+<--Tagsinput -->
+<script th:src="@{/admin/plugins/jQuery-Tags-Input/dist/jquery.tagsinput.min.js}"></script>
+<-- Select2 -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+<-- ajaxupload -->
+<script th:src="@{/admin/plugins/ajaxupload/ajaxupload.js}"></script>
 </body>
 </html>

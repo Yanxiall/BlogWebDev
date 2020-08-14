@@ -120,6 +120,13 @@
       limit #{start},#{limit}
     </if>
   </select>
+  <select id="findAllCategory"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_blog_category
+    where is_deleted=0
+    order by category_id desc
+  </select>
   <select id="getTotalCategory" parameterType="Map" resultType="int">
     select count(*) from tb_blog_category
     where is_deleted=0

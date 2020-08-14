@@ -16,6 +16,7 @@ com/HYX/webDev/config/MyBlogWebMvcConfigurer.class
 com/HYX/webDev/interceptor/AdminLoginInterceptor.class
 com/HYX/webDev/controller/admin/TagController.class
 com/HYX/webDev/util/Result.class
+com/HYX/webDev/controller/admin/UploadController.class
 com/HYX/webDev/controller/admin/BlogEditController.class
 com/HYX/webDev/entity/BlogTagRelation.class
 com/HYX/webDev/controller/common/KaptchaController.class

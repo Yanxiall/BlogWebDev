@@ -1,5 +1,6 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/PageUtil.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/UploadController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/MyBlogApplication.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/PageResult.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/Result.java

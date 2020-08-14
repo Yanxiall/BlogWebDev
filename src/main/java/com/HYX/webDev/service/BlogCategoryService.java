@@ -4,6 +4,8 @@ import com.HYX.webDev.entity.BlogCategory;
 import com.HYX.webDev.util.PageResult;
 import com.HYX.webDev.util.PageUtil;
 
+import java.util.List;
+
 
 public interface BlogCategoryService {
     PageResult getCategoryPage(PageUtil pageUtil);
@@ -12,4 +14,5 @@ public interface BlogCategoryService {
     Boolean DeleteCategory(Integer CategoryId);
     Boolean DeleteCategoryBatch(Integer[] ids);
     BlogCategory CategoryInfo(Integer categoryId);
+    List<BlogCategory> getAllCategories();
 }

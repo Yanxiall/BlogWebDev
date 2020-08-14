@@ -68,4 +68,8 @@ public class BlogCategoryImpl implements BlogCategoryService {
         }
         return false;
     }
+    @Override
+    public List<BlogCategory> getAllCategories(){
+        return  blogCategoryMapper.findAllCategory();
+    }
 }

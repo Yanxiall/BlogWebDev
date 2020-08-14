@@ -1,6 +1,8 @@
 package com.HYX.webDev.controller.admin;
 
+import com.HYX.webDev.service.BlogCategoryService;
 import com.HYX.webDev.util.MyBlogUtils;
+import org.apache.catalina.filters.ExpiresFilter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -8,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -22,8 +25,13 @@ import java.util.Random;
 @Controller
 @RequestMapping("/admin")
 public class BlogEditController {
+    @Resource
+    private BlogCategoryService blogCategoryService;
     @GetMapping({"/edit"})
-    public String category() { return "admin/edit"; }
+    public String category(HttpServletRequest request) {
+        request.setAttribute("categories",blogCategoryService.getAllCategories());
+        return "admin/edit";
+    }
     @PostMapping("/blogs/md/uploadfile")
     public void uploadFileByEditormd(HttpServletRequest request,
                                      HttpServletResponse response,
@@ -45,7 +53,6 @@ public class BlogEditController {
             i++;
         }
         String fileUrl = MyBlogUtils.getHost(new URI(request.getRequestURL() + "")) + "/upload/" + fileName.substring(0, fileName.indexOf("."))+ suffix;
-        System.out.println(fileUrl);
         //create file directory
         File fileDirectory = new File(FILE_UPLOAD_DIC);
         try {

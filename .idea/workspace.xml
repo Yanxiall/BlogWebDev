@@ -2,106 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44b95671-cfbf-4630-9b88-0c3ab1f3ee23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/config/MyBlogWebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/config/MyBlogWebMvcConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/TagController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogTagRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogTagRelationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogTagImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogTagImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogTagRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogTagRelationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/dist/sweetalert2.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/dist/sweetalert2.all.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/dist/sweetalert2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/dist/sweetalert2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/dist/sweetalert2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/dist/sweetalert2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/SweetAlert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/globalState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/_destroy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/_main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/buttons-handlers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/close.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/enable-disable-elements.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/getInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/hideLoading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/keydown-handler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/popup-click-handler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/progress-steps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/show-reset-validation-error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/instanceMethods/update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/privateMethods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/privateProps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_body.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_polyfills.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_theming.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_toasts-animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_toasts-body.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/scss/_toasts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/staticMethods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/staticMethods/argsToParams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/staticMethods/dom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/staticMethods/fire.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/staticMethods/mixin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/staticMethods/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/staticMethods/showLoading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/staticMethods/timer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/sweetalert2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/sweetalert2.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/DismissReason.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/Timer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/aria.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/defaultInputValidators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/animationEndEvent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/domUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/getters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/inputUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/measureScrollbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/parseHtmlToContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/render.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderCloseButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderContent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderIcon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderPopup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderProgressSteps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/dom/renderers/renderTitle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/ieFix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/iosFix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/isNodeEnv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/openPopup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/params.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/scrollbarFix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/setParameters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/utils/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/src/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/sweetalert/sweetalert2.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogEditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogCategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogCategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/select2/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/tagsinput/jquery.tagsinput.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/tagsinput/jquery.tagsinput.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/config/MyBlogWebMvcConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/config/MyBlogWebMvcConfigurer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/TagController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/TagController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogTagRelationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogTagRelationMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogTagImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogTagImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogTagRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogTagRelationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/BlogEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/BlogEditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogCategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogCategoryMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogCategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogCategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test(3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test(4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +103,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1frsgBr1biYWhS39SeSb0QNEWEl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -136,6 +114,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/admin/plugins" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />

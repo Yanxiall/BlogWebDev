@@ -43,6 +43,7 @@ $(function () {
       $("#CategoryIcon").val('/admin/dist/img/category/' + rand + ".png")
     });
 });
+//Add category
 function CategoryAdd(){
  reset();
  $(".modal-title").html('Add Category');
@@ -51,7 +52,7 @@ function CategoryAdd(){
 function imgFormatter(cellvalue) {
     return "<a href='" + cellvalue + "'> <img src='" + cellvalue + "' height=\"64\" width=\"64\" alt='icon'/></a>";
 }
-
+//Modify Category
 function CategoryModify(){
   var categoryId = GetSelectedRow();
   if(categoryId == null){

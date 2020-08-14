@@ -18,6 +18,8 @@ public interface BlogCategoryMapper {
 
     List<BlogCategory> findCategory(Map param);
 
+    List<BlogCategory> findAllCategory();
+
     int getTotalCategory(Map param);
 
     int updateByPrimaryKeySelective(BlogCategory record);
