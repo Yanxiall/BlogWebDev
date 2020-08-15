@@ -16,6 +16,12 @@
     from tb_blog_tag
     where tag_id = #{tagId,jdbcType=INTEGER}
   </select>
+  <select id="selectByTagName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_blog_tag
+    where tag_name = #{tagName,jdbcType=INTEGER}
+  </select>
   <update id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     update tb_blog_tag SET is_deleted=1
     where tag_id = #{tagId,jdbcType=INTEGER} AND is_deleted=0
@@ -27,6 +33,13 @@
     #{id}
     </foreach>
   </update>
+  <insert id="InsertBatch" parameterType="java.util.List" useGeneratedKeys="true"  keyProperty="tagId">
+    insert into tb_blog_tag (tag_name)
+    values
+    <foreach item="item" collection="list"  separator="," >
+      (#{item.tagName,jdbcType=VARCHAR})
+    </foreach>
+  </insert>
   <insert id="insert" parameterType="com.HYX.webDev.entity.BlogTag">
     insert into tb_blog_tag (tag_id, tag_name, is_deleted, 
       create_time)

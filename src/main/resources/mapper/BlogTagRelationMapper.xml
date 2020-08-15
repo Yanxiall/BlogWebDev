@@ -25,7 +25,13 @@
       #{id}
     </foreach>
   </select>
-
+  <insert id="insertBatch" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="relationId">
+    insert into tb_blog_tag_relation (tag_id, blog_id)
+    values
+    <foreach item="item" collection="list"  separator="," >
+      (#{item.tagId,jdbcType=INTEGER},#{item.blogId,jdbcType=BIGINT})
+    </foreach>
+  </insert>
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from tb_blog_tag_relation

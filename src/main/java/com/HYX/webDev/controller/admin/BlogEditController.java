@@ -1,13 +1,15 @@
 package com.HYX.webDev.controller.admin;
 
+import com.HYX.webDev.entity.Blog;
 import com.HYX.webDev.service.BlogCategoryService;
+import com.HYX.webDev.service.BlogService;
 import com.HYX.webDev.util.MyBlogUtils;
+import com.HYX.webDev.util.Result;
+import com.HYX.webDev.util.ResultGenerator;
 import org.apache.catalina.filters.ExpiresFilter;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -27,11 +29,69 @@ import java.util.Random;
 public class BlogEditController {
     @Resource
     private BlogCategoryService blogCategoryService;
+    @Resource
+    private BlogService blogService;
     @GetMapping({"/edit"})
     public String category(HttpServletRequest request) {
         request.setAttribute("categories",blogCategoryService.getAllCategories());
         return "admin/edit";
     }
+ // save the posts
+    @PostMapping("/edit/save")
+    @ResponseBody
+    public Result save(@RequestParam(name="BlogTitle") String BlogTitle,
+                       @RequestParam(name="BlogTag")  String BlogTag ,
+                       @RequestParam(name="BlogSuburl")  String BlogSuburl,
+                       @RequestParam(name="blogCategoryId") Integer blogCategoryId,
+                       @RequestParam(name="blogContent") String blogContent,
+                       @RequestParam(name="RandomCoverImg") String CoverImg,
+                       @RequestParam(name="PostStatus") Byte PostStatus,
+                       @RequestParam(name="EnableComment") Byte EnableComment)
+    {
+        if(StringUtils.isEmpty(BlogTitle))
+        {
+            return ResultGenerator.genFailResult("Please input Blog Title!");
+        }
+        if (BlogTitle.trim().length() > 150) {
+            return ResultGenerator.genFailResult("Blog Title is too long");
+        }
+        if(StringUtils.isEmpty(BlogTag))
+        {
+            return ResultGenerator.genFailResult("Please input Blog Tag!");
+        }
+        if (BlogTag.trim().length() > 150) {
+            return ResultGenerator.genFailResult("Blog Tag is too long");
+        }
+        if(StringUtils.isEmpty(BlogSuburl))
+        {
+            return ResultGenerator.genFailResult("Please input custom path!");
+        }
+        if(StringUtils.isEmpty(blogContent))
+        {
+            return ResultGenerator.genFailResult("Please input blog content!");
+        }
+        if(StringUtils.isEmpty(CoverImg))
+        {
+            return ResultGenerator.genFailResult("Please upload cover image!");
+        }
+        Blog blog = new Blog();
+        blog.setBlogTitle(BlogTitle);
+        blog.setBlogTags(BlogTag);
+        blog.setBlogSubUrl(BlogSuburl);
+        blog.setBlogCategoryId(blogCategoryId);
+        blog.setBlogContent(blogContent);
+        blog.setBlogCoverImage(CoverImg);
+        blog.setBlogStatus(PostStatus);
+        blog.setEnableComment(EnableComment);
+        String saveResult = blogService.saveBlog(blog);
+        if("success".equals(saveResult)){
+            return ResultGenerator.genSuccessResult("save success!");
+        }
+        else{
+            return ResultGenerator.genFailResult(saveResult);
+        }
+    }
+    //upload the images
     @PostMapping("/blogs/md/uploadfile")
     public void uploadFileByEditormd(HttpServletRequest request,
                                      HttpServletResponse response,

@@ -8,6 +8,7 @@ import com.HYX.webDev.util.PageResult;
 import com.HYX.webDev.util.PageUtil;
 import com.HYX.webDev.util.Result;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -26,6 +27,7 @@ public class BlogCategoryImpl implements BlogCategoryService {
         return pageResult;
     }
     @Override
+    @Transactional
     public Boolean AddCategory (String CategoryName, String CategoryIcon){
         BlogCategory blogCategory = new BlogCategory();
         blogCategory.setCategoryName(CategoryName);
@@ -54,6 +56,7 @@ public class BlogCategoryImpl implements BlogCategoryService {
         return blogCategory;
     }
     @Override
+    @Transactional
     public Boolean DeleteCategory(Integer CategoryId){
 
         if(blogCategoryMapper.deleteByPrimaryKey(CategoryId) > 0){
@@ -62,6 +65,7 @@ public class BlogCategoryImpl implements BlogCategoryService {
         return false;
     }
     @Override
+    @Transactional
     public Boolean DeleteCategoryBatch(Integer[] ids){
         if(blogCategoryMapper.deleteBatch(ids) > 0){
             return true;

@@ -1,5 +1,6 @@
 package com.HYX.webDev.dao;
 
+import com.HYX.webDev.entity.BlogTag;
 import com.HYX.webDev.entity.BlogTagRelation;
 
 import java.util.List;
@@ -18,4 +19,6 @@ public interface BlogTagRelationMapper {
     int updateByPrimaryKeySelective(BlogTagRelation record);
 
     int updateByPrimaryKey(BlogTagRelation record);
+//insert a batch
+    int insertBatch(List<BlogTagRelation> blogTagRelations);
 }

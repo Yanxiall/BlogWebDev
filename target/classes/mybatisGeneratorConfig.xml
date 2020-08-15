@@ -32,11 +32,10 @@
                              targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
-        <table tableName="tb_admin_user" domainObjectName="AdminUser"
+        <table tableName="tb_blog" domainObjectName="Blog"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
         </table>
-
     </context>
 </generatorConfiguration>

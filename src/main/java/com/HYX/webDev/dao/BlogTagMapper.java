@@ -13,6 +13,8 @@ public interface BlogTagMapper {
 
     int insertSelective(BlogTag record);
 
+    BlogTag selectByTagName(String tagName);
+
     BlogTag selectByPrimaryKey(Integer tagId);
 
     int deleteBatch(Integer[] ids);
@@ -24,4 +26,6 @@ public interface BlogTagMapper {
     int updateByPrimaryKeySelective(BlogTag record);
 
     int updateByPrimaryKey(BlogTag record);
+
+    int InsertBatch(List<BlogTag> BlogTags);
 }

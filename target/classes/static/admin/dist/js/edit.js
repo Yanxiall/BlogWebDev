@@ -58,7 +58,49 @@ $(function () {
                     else{
                         alert("error");
                     }
-
                   }
-   })
+   });
+   $("#SaveBlogButton").click(function(){
+        var BlogTitle = $("#BlogTitle").val();
+        var BlogTag = $("#BlogTag").val();
+        var BlogSuburl = $("#BlogSuburl").val();
+        var blogCategoryId = $("#blogCategoryId").val();
+        var blogContent = blogEditor.getMarkdown();
+        var RandomCoverImg = $("#RandomCoverImg")[0].src;
+        var PostStatus = $("input[name='PostStatus']:checked").val();
+        var EnableComment =  $("input[name='EnableComment']:checked").val();
+        var data = {
+        "BlogTitle":BlogTitle,"BlogTag":BlogTag,"BlogSuburl":BlogSuburl,"blogCategoryId":blogCategoryId,
+        "blogContent":blogContent,"RandomCoverImg":RandomCoverImg,"PostStatus":PostStatus,"EnableComment":EnableComment
+        };
+        $.ajax
+                 ({
+                     type: "POST",
+                     url: "/admin/edit/save",
+                     data:data,
+                     dataType:"json",
+                     success: function(result)
+                     {
+                        if(result.resultCode == 200)
+                        {
+                        swal("save success", {
+                                            icon: "success"
+                                        });
+                         }
+                        else
+                        {
+                          swal(result.message, {
+                              icon: "error",
+                                          });
+                        }
+                     },
+                     error:function()
+                     {
+                        swal("request failed", {
+                                icon: "error",
+                        });
+                     }
+                 });
+   });
+
 });
