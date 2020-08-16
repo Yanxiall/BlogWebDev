@@ -9,6 +9,8 @@ import com.HYX.webDev.entity.BlogCategory;
 import com.HYX.webDev.entity.BlogTag;
 import com.HYX.webDev.entity.BlogTagRelation;
 import com.HYX.webDev.service.BlogService;
+import com.HYX.webDev.util.PageResult;
+import com.HYX.webDev.util.PageUtil;
 import com.HYX.webDev.util.ResultGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -82,5 +84,23 @@ public class BlogServiceImpl implements BlogService {
             }
         }
         return "fail";
+    }
+    @Override
+    public PageResult getBlogPage(PageUtil pageUtil) {
+        //the data of the current page
+        List<Blog> blogs =blogMapper.findBlog(pageUtil);
+        //the number of all records
+        int total = blogMapper.getTotalBlog(pageUtil);
+        PageResult pageResult = new PageResult(blogs, total, pageUtil.getLimit(), pageUtil.getPage());
+        return pageResult;
+    }
+
+    @Override
+    @Transactional
+    public Boolean DeleteBlogBatch(Integer[] ids){
+        if(blogMapper.deleteBatch(ids) > 0){
+            return true;
+        }
+        return false;
     }
 }

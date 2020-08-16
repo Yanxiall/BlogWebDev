@@ -1,5 +1,7 @@
 package com.HYX.webDev.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class Blog {
@@ -24,7 +26,7 @@ public class Blog {
     private Byte enableComment;
 
     private Byte isDeleted;
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+2")
     private Date createTime;
 
     private Date updateTime;

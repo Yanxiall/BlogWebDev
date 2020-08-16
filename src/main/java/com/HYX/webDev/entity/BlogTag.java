@@ -1,5 +1,7 @@
 package com.HYX.webDev.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class BlogTag {
@@ -8,7 +10,7 @@ public class BlogTag {
     private String tagName;
 
     private Byte isDeleted;
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+2")
     private Date createTime;
 
     public Integer getTagId() {

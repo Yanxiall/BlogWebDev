@@ -2,28 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44b95671-cfbf-4630-9b88-0c3ab1f3ee23" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogTagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogTagMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogTagRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogTagRelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogTag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogTagRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogTagRelation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogTagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogTagMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogTagRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogTagRelationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/BlogEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/BlogEditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/UploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogTagMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogTagMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogTagRelationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogTagRelationMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogTagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogTagMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogTagRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogTagRelationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/Blog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogTagRelation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogTagRelation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -38,9 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/admin/dist/js" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/admin/plugins" />
     </key>
   </component>

@@ -8,6 +8,7 @@ com/HYX/webDev/service/BlogService.class
 com/HYX/webDev/util/PageUtil.class
 com/HYX/webDev/util/ResultGenerator.class
 com/HYX/webDev/entity/BlogTag.class
+com/HYX/webDev/controller/admin/BlogManage.class
 com/HYX/webDev/service/BlogCategoryService.class
 com/HYX/webDev/service/Impl/BlogTagImpl.class
 com/HYX/webDev/dao/BlogMapper.class

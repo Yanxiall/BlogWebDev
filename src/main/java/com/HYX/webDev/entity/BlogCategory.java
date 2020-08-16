@@ -1,5 +1,7 @@
 package com.HYX.webDev.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class BlogCategory {
@@ -12,7 +14,7 @@ public class BlogCategory {
     private Integer categoryRank;
 
     private Byte isDeleted;
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+2")
     private Date createTime;
 
     public Integer getCategoryId() {
