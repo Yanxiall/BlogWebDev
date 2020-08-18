@@ -14,7 +14,6 @@ $(function () {
       onload: function (obj) {
             }
     });
-
   $(".select2").select2();
   $('#BlogTag').tagsInput({
   width: "100%",

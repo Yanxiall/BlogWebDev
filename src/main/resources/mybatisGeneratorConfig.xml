@@ -32,7 +32,7 @@
                              targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
-        <table tableName="tb_blog" domainObjectName="Blog"
+        <table tableName="tb_link" domainObjectName="Link"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">

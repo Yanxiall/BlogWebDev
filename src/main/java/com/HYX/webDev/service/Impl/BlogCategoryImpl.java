@@ -52,7 +52,6 @@ public class BlogCategoryImpl implements BlogCategoryService {
     @Override
     public BlogCategory CategoryInfo(Integer categoryId){
         BlogCategory blogCategory =  blogCategoryMapper.selectByPrimaryKey(categoryId);
-
         return blogCategory;
     }
     @Override

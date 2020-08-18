@@ -40,15 +40,13 @@ public class AdminController {
             session.setAttribute("loginUser", adminUser.getNickName());
             session.setAttribute("loginUserId", adminUser.getAdminUserId());
             // session will be open for 2 hours
-            session.setMaxInactiveInterval(60 * 60 * 2);
+           // session.setMaxInactiveInterval(60 * 60 * 2);
             return "redirect:/admin/index";
         } else {
             session.setAttribute("errorMsg", "userName or password is wrong");
             return "admin/login";
         }
     }
-
-
     @GetMapping({"", "/", "/index", "/index.html"})
     public String index() {
         return "admin/index";
