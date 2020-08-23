@@ -82,11 +82,11 @@ function reset() {
     $('#edit-error-msg').css("display", "none");
     $("#LinkType option:first").prop("selected", 'selected');
 }
-//reload JaGrid to update the page
+//reload JqGrid to update the page
 function reload() {
     var page = $("#jqGrid").jqGrid('getGridParam', 'page');
     $("#jqGrid").jqGrid('setGridParam', {
-        page: page
+        //page: page
     }).trigger("reloadGrid");
 }
 $("#saveButton").click(function (){

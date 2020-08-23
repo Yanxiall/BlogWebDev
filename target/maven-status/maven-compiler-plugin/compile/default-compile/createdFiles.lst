@@ -18,6 +18,7 @@ com/HYX/webDev/dao/BlogMapper.class
 com/HYX/webDev/dao/BlogTagMapper.class
 com/HYX/webDev/dao/BlogCategoryMapper.class
 com/HYX/webDev/util/Constants.class
+com/HYX/webDev/controller/blog/projectsController.class
 com/HYX/webDev/entity/Link.class
 com/HYX/webDev/controller/admin/FriendLinkController.class
 com/HYX/webDev/service/Impl/BlogCategoryImpl.class
@@ -31,5 +32,6 @@ com/HYX/webDev/entity/BlogTagRelation.class
 com/HYX/webDev/controller/common/KaptchaController.class
 com/HYX/webDev/util/MD5Util.class
 com/HYX/webDev/controller/admin/AdminController.class
+com/HYX/webDev/controller/blog/blogController.class
 com/HYX/webDev/service/Impl/BlogServiceImpl.class
 com/HYX/webDev/dao/BlogTagRelationMapper.class

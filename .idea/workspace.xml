@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2164f1a3-9748-4672-bf50-f896e6324981" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/FriendLinkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/LinkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/LinkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/link.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/friendlink.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogManage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/BlogManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/BlogManage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogCategoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/build.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/addons/ui.multiselect.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/addons/ui.multiselect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-el.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-he.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-is.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-no.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-no.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/js/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/dist/js/link.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -62,6 +14,14 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,11 +36,41 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="static.blog.css in web_dev" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web_dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="static.blog.css.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="static.blog.css" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.static.blog.css in web_dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,5 +84,27 @@
       <updated>1597695148464</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1249" height="192" key="GridCell.Tab.0.bottom" timestamp="1598112470544">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state width="1249" height="192" key="GridCell.Tab.0.bottom/65.24.1301.744@65.24.1301.744" timestamp="1598112470544" />
+    <state width="1249" height="192" key="GridCell.Tab.0.center" timestamp="1598112470542">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state width="1249" height="192" key="GridCell.Tab.0.center/65.24.1301.744@65.24.1301.744" timestamp="1598112470542" />
+    <state width="1249" height="192" key="GridCell.Tab.0.left" timestamp="1598112470541">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state width="1249" height="192" key="GridCell.Tab.0.left/65.24.1301.744@65.24.1301.744" timestamp="1598112470541" />
+    <state width="1249" height="192" key="GridCell.Tab.0.right" timestamp="1598112470543">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state width="1249" height="192" key="GridCell.Tab.0.right/65.24.1301.744@65.24.1301.744" timestamp="1598112470543" />
+    <state x="387" y="83" width="657" height="598" key="find.popup" timestamp="1598091888792">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="387" y="83" width="657" height="598" key="find.popup/65.24.1301.744@65.24.1301.744" timestamp="1598091888792" />
   </component>
 </project>
