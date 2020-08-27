@@ -43,7 +43,7 @@ public class BlogManage {
     }
     @RequestMapping(value ="/blog/delete", method = RequestMethod.POST)
     @ResponseBody
-    public Result delete(@RequestBody Integer[] ids){
+    public Result delete(@RequestBody Long[] ids){
         if (ids.length < 1) {
             return ResultGenerator.genFailResult("invalid parameter!");
         }

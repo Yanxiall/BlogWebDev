@@ -83,8 +83,10 @@ $(function () {
                         if(result.resultCode == 200)
                         {
                         swal("save success", {
-                                            icon: "success"
-                                        });
+                               icon: "success"
+                                 }).then(function () {
+                               window.location.href = "/admin/blog";
+                               });
                          }
                         else
                         {
@@ -100,6 +102,10 @@ $(function () {
                         });
                      }
                  });
+   });
+   $("#ReturnBlogList").click(function(){
+   console.log("come into return");
+   window.location.href = "/admin/blog";
    });
 
 });

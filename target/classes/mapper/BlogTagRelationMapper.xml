@@ -16,9 +16,9 @@
     from tb_blog_tag_relation
     where relation_id = #{relationId,jdbcType=BIGINT}
   </select>
-  <select id="SelectDistinctId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  <select id="SelectDistinctId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select
-    DISTINCR(tag_id)
+    DISTINCT(tag_id)
     from tb_blog_tag_relation
     where tag_id in
     <foreach item="id" collection="array" open="(" separator="," close=")">
@@ -36,6 +36,13 @@
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from tb_blog_tag_relation
     where relation_id = #{relationId,jdbcType=BIGINT}
+  </delete>
+  <delete id="delteByBlogIds" parameterType="java.lang.Long">
+    delete from tb_blog_tag_relation
+    where blog_id in
+    <foreach item="id" collection="array" open="(" separator="," close=")">
+      #{id}
+    </foreach>
   </delete>
   <insert id="insert" parameterType="com.HYX.webDev.entity.BlogTagRelation">
     insert into tb_blog_tag_relation (relation_id, blog_id, tag_id, 

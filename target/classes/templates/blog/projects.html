@@ -2,7 +2,90 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="blog/header::header-fragment"></head>
 <body>
-<header th:replace="blog/header::nav-fragment"></header>
-<p>test</p>
+<!--banner-->
+<div class="projectsbanner">
+    <header th:replace="blog/header::nav-fragment"></header>
+    <div class="projectsbanner-info">
+            <p class="motto">STAY HUNGRY</p>
+            <p class="motto">STAY FOOLISH</p>
+    </div>
+</div>
+
+<div class="container">
+    <!--main-->
+    <div class="main">
+        <section class="projectscontents">
+            <div class="row">
+                <div class="section-title">
+                    <h2>My Experiences</h2><!-- section title -->
+                </div>
+                <div class="col-md-8 blog">
+                    <div class="articlelist">
+                        <article class="blog-summary">
+                            <header>
+                                <h3><a href="##">Blog Design</a></h3>
+                                <img th:src="@{/admin/dist/img/rand/33.jpg}" style="width:400px;height: 300px;" alt="">
+                            </header>
+                        </article>
+                        <article class="blog-summary">
+                            <header>
+                                <h3><a href="##">Blog Design</a></h3>
+                                <img th:src="@{/admin/dist/img/rand/33.jpg}" style="width:400px;height: 300px;" alt="">
+                            </header>
+                        </article>
+
+                    </div>
+                </div>
+                <aside class="col-md-4 tag">
+                    <div class="aside-widget">
+                        <header>
+                            <span>Search</span>
+                        </header>
+                        <div class="clean-searchbox">
+                            <form action="#" method="get" accept-charset="utf-8">
+                                <input class="searchfield" id="searchbox" type="text" placeholder="Please enter your keyword">
+                                <button class="searchbutton" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="aside-widget">
+                        <header>
+                            <span>Tags</span>
+                        </header>
+                        <div class="body clearfix">
+                            <ul class="tags">
+                                <li><a href="#">HTML5</a></li>
+                                <li><a href="#">CSS3</a></li>
+                                <li><a href="#">Javascript</a></li>
+                                <li><a href="#">Thymeleaf</a></li>
+                                <li><a href="#">RESTful</a></li>
+                                <li><a href="#">MyBatis</a></li>
+                                <li><a href="#">Mysql</a></li>
+                                <li><a href="#">Springboot</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">Bootstrap 4</a></li>
+                                <li><a href="#">Deep Learning</a></li>
+                                <li><a href="#">Big Data</a></li>
+                                <li><a href="#">Spark</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">C++</a></li>
+                                <li><a href="#">Python</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- jQuery -->
+<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
+<!-- Bootstrap 4 -->
+<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!--common-->
+<script th:src="@{/blog/js/common.js}"></script>
 </body>
+
 </html>

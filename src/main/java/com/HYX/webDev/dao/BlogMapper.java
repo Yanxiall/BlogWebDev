@@ -25,7 +25,7 @@ public interface BlogMapper {
 
     int getTotalBlog(Map param);
 
-    int deleteBatch(Integer[] ids);
+    int deleteBatch(Long[] ids);
 
 
 }

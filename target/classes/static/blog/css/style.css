@@ -1,12 +1,17 @@
+html,body,head,nav,div,h2,p,header,section,img,span,h3,article,aside,input,ul,li,a,form,button {
+      margin: 0px;
+      padding: 0px;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+ }
+
  body{
-  padding:0;
-  margin:0;
   background-color:#f6e5ff;
   font-family: 'Libre Franklin', sans-serif;
  }
  p {
-     margin: 0;
-     padding: 0;
      font-size: 16px;
      letter-spacing: 1px;
      line-height: 1.9;
@@ -116,4 +121,134 @@ a.banner-button2 {
     width: 85%;
     background: #0dd3ff;
     height: 8px;
+}
+.projectsbanner{
+height:350px;
+display:block;
+background: url(../img/projectsbanner.jpg) no-repeat;
+background-size:cover;
+position:relative;
+
+}
+.projectsbanner-info{
+position:absolute;
+top:50%;
+left:50%;
+margin-left: -60px;
+margin-top: -20px;
+}
+.projectsbanner-info h2{
+color:#fd0000;
+font-size:30px;
+font-weight:500;
+}
+#mainnav .nav-link:hover {
+background-color:#c3c2c7;
+}
+#searchbox {
+border:none;
+padding: 3px 30px 3px 20px;
+background-color:#f6e5ff;
+color:#5e5f60;
+font-family: "Times New Roman", Times, serif;
+font-size:16px;
+}
+#searchbox:focus,
+#searchbox:hover{
+border:1px solid #555;
+border-radius: 4px;
+}
+
+.searchbutton{
+margin-left:20px;
+background: transparent;
+border: none !important;
+}
+.aside-widget{
+margin-bottom:40px;
+padding-top:70px;
+}
+.aside-widget header{
+margin-bottom:15px;
+}
+.aside-widget header span{
+font-family: "Times New Roman", Times, serif;
+font-size:15px;
+font-weight:450;
+padding-bottom: 10px;
+border-bottom: 1px solid #040013;
+}
+.tags {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.tags li {
+    float: left;
+}
+.tags li a {
+    color:#5e5f60;
+    font-family: "Times New Roman", Times, serif;
+    padding: 3px 20px;
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid #DDD;
+    border-radius: 25px;
+    font-size:13px;
+}
+.tags li a:focus,
+.tags li a:hover {
+    border-color: #428bca;
+}
+.tags li    a:link { text-decoration: none;color: blue}
+.tags li　　 a:active { text-decoration:blink}
+.tags li　　 a:hover { text-decoration:underline;color: red}
+.tags li　　 a:visited { text-decoration: none;color: green}
+
+.category-name{
+margin-left:10px;
+margin-right:20px;
+font-family: "Times New Roman", Times, serif;
+font-size:15px;
+}
+.createtime{
+color:#5e5f60;
+margin-left:450px;
+margin-right:1px;
+font-family: "Times New Roman", Times, serif;
+font-size:15px;
+}
+.articlelist{
+padding-top:20px;
+}
+.blog-summary header{
+margin-top:20px;
+}
+.blog-summary{
+margin-top:50px;
+}
+.blog-summary header a{
+font-family: "Times New Roman", Times, serif;
+font-size:15px;
+text-decoration:none;
+color:#343a40;
+}
+.projectscontents .section-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 52px;
+}
+.motto{
+color:white;
+font-size:30px;
+font-weight:400;
+word-wrap:break-word;
+}
+.projectscontents h2{
+color:#622c13;
+display: block;
+width: 100%;
+text-align: center;
 }

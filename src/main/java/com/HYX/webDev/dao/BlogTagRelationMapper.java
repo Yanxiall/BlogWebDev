@@ -8,6 +8,8 @@ import java.util.List;
 public interface BlogTagRelationMapper {
     int deleteByPrimaryKey(Long relationId);
 
+    int delteByBlogIds(Long[] ids);
+
     int insert(BlogTagRelation record);
 
     int insertSelective(BlogTagRelation record);

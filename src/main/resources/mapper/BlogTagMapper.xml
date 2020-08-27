@@ -14,13 +14,13 @@
     select 
     <include refid="Base_Column_List" />
     from tb_blog_tag
-    where tag_id = #{tagId,jdbcType=INTEGER}
+    where tag_id = #{tagId,jdbcType=INTEGER} AND is_deleted = 0
   </select>
   <select id="selectByTagName" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from tb_blog_tag
-    where tag_name = #{tagName,jdbcType=INTEGER}
+    where tag_name = #{tagName,jdbcType=INTEGER} AND is_deleted = 0
   </select>
   <update id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     update tb_blog_tag SET is_deleted=1
