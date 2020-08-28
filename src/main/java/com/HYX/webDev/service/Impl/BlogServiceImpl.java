@@ -98,7 +98,7 @@ public class BlogServiceImpl implements BlogService {
     @Override
     @Transactional
     public Boolean DeleteBlogBatch(Long[] ids){
-
+        //delete blog and its relation
         if(blogMapper.deleteBatch(ids) > 0 && blogTagRelationMapper.delteByBlogIds(ids)>0){
             return true;
         }

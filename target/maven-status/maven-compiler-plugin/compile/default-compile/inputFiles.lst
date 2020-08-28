@@ -20,7 +20,6 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/MD5Util.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/AdminUserService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/Link.java
-/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/blog/projectsController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/Impl/BlogCategoryImpl.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/Impl/BlogTagImpl.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/Constants.java
@@ -33,6 +32,7 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/TagController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/BlogTagService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/BlogTag.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/TagShow.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/common/KaptchaController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/interceptor/AdminLoginInterceptor.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/AdminUserMapper.java

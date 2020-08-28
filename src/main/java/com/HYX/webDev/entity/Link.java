@@ -1,7 +1,5 @@
 package com.HYX.webDev.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.util.Date;
 
 public class Link {
@@ -18,7 +16,7 @@ public class Link {
     private Integer linkRank;
 
     private Byte isDeleted;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+2")
+
     private Date createTime;
 
     public Long getLinkId() {

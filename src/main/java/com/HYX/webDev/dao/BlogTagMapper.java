@@ -1,6 +1,7 @@
 package com.HYX.webDev.dao;
 
 import com.HYX.webDev.entity.BlogTag;
+import com.HYX.webDev.entity.TagShow;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -28,4 +29,6 @@ public interface BlogTagMapper {
     int updateByPrimaryKey(BlogTag record);
 
     int InsertBatch(List<BlogTag> BlogTags);
+
+    List<TagShow> getTagShow();
 }

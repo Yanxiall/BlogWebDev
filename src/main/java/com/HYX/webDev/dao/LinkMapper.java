@@ -25,6 +25,6 @@ public interface LinkMapper {
 
     int getTotalLink(Map param);
 
-    int deleteBatch(Long[] ids);
+    int deleteBatch(Integer[] ids);
 
 }

@@ -6,6 +6,7 @@ import com.HYX.webDev.dao.BlogTagMapper;
 import com.HYX.webDev.dao.BlogTagRelationMapper;
 import com.HYX.webDev.entity.BlogCategory;
 import com.HYX.webDev.entity.BlogTag;
+import com.HYX.webDev.entity.TagShow;
 import com.HYX.webDev.service.BlogTagService;
 import com.HYX.webDev.util.PageResult;
 import com.HYX.webDev.util.PageUtil;
@@ -54,5 +55,9 @@ public class BlogTagImpl implements BlogTagService {
             return false;
         }
         return blogTagMapper.deleteBatch(ids) > 0;
+    }
+    @Override
+    public List<TagShow> BlogTagShow(){
+        return  blogTagMapper.getTagShow();
     }
 }

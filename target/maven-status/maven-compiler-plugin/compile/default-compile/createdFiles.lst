@@ -18,11 +18,11 @@ com/HYX/webDev/dao/BlogMapper.class
 com/HYX/webDev/dao/BlogTagMapper.class
 com/HYX/webDev/dao/BlogCategoryMapper.class
 com/HYX/webDev/util/Constants.class
-com/HYX/webDev/controller/blog/projectsController.class
 com/HYX/webDev/entity/Link.class
 com/HYX/webDev/controller/admin/FriendLinkController.class
 com/HYX/webDev/service/Impl/BlogCategoryImpl.class
 com/HYX/webDev/config/MyBlogWebMvcConfigurer.class
+com/HYX/webDev/entity/TagShow.class
 com/HYX/webDev/interceptor/AdminLoginInterceptor.class
 com/HYX/webDev/controller/admin/TagController.class
 com/HYX/webDev/util/Result.class

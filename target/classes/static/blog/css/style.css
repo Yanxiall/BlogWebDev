@@ -201,8 +201,7 @@ border-bottom: 1px solid #040013;
 .tags li a:hover {
     border-color: #428bca;
 }
-.tags li    a:link { text-decoration: none;color: blue}
-.tags li　　 a:active { text-decoration:blink}
+
 .tags li　　 a:hover { text-decoration:underline;color: red}
 .tags li　　 a:visited { text-decoration: none;color: green}
 

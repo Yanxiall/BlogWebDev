@@ -56,22 +56,14 @@
                         </header>
                         <div class="body clearfix">
                             <ul class="tags">
-                                <li><a href="#">HTML5</a></li>
-                                <li><a href="#">CSS3</a></li>
-                                <li><a href="#">Javascript</a></li>
-                                <li><a href="#">Thymeleaf</a></li>
-                                <li><a href="#">RESTful</a></li>
-                                <li><a href="#">MyBatis</a></li>
-                                <li><a href="#">Mysql</a></li>
-                                <li><a href="#">Springboot</a></li>
-                                <li><a href="#">Java</a></li>
-                                <li><a href="#">Bootstrap 4</a></li>
-                                <li><a href="#">Deep Learning</a></li>
-                                <li><a href="#">Big Data</a></li>
-                                <li><a href="#">Spark</a></li>
-                                <li><a href="#">Java</a></li>
-                                <li><a href="#">C++</a></li>
-                                <li><a href="#">Python</a></li>
+                                <th:block th:if="${null != hotTags}">
+                                    <th:block th:each="hotTag : ${hotTags}">
+                                        <li><a th:href="@{'/tag/' + ${hotTag.tagName}}">
+                                            <th:block th:text="${hotTag.tagName}+'('+${hotTag.tagCount}+')'"></th:block>
+                                        </a>
+                                        </li>
+                                    </th:block>
+                                </th:block>
                             </ul>
                         </div>
                     </div>

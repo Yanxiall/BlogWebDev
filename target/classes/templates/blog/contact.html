@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="blog/header::header-fragment">
+</head>
+<link rel="stylesheet" th:href="@{/blog/css/form.css}"/>
+<body>
+<header th:replace="blog/header::nav-fragment"></header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5 col-sm-4">
+            <div class="information">
+                <h2>General Inquiries</h2>
+                <p class="lead">Ready to accelerate to your project? Contact me at once!</p>
+                <h5 class="mt-5">General Information</h5>
+                <ul class="list-unstyled">
+
+                    <li><span class="font-weight-bold">Email:</span>yanxia_he@126.com</li>
+                    <li><span class="font-weight-bold">Phone:</span>015756213316</li>
+                    <li><span class="font-weight-bold">Address:</span>Muehl str.11, Leonberg,Baden-Wuertemberg</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-lg-5 col-sm-6">
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form"  >
+                        <label class="user">
+                            <input type="text" required placeholder="Name" />
+                        </label>
+                        <label class="email">
+                            <input type="email" required placeholder="email" />
+                        </label>
+                        <label class="phone">
+                            <input type="text" required placeholder="phone" />
+                        </label>
+                        <label class="company">
+                            <input type="email" required placeholder="company" />
+                        </label>
+                        <label class="message">
+                            <textarea required placeholder="Message"></textarea>
+                        </label>
+                        <div class="submit">
+                            <button type="submit" class="button-blue">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>Error</h4>
+                        Sorry there was an error sending your form.
+                    </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h2>Success! Your Message was Sent Successfully.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/684fe6b1fc.js" crossorigin="anonymous"></script>
+</body>
+</html>
