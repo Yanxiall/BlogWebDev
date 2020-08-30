@@ -127,7 +127,7 @@
     where link_id = #{linkId,jdbcType=BIGINT}
   </update>
 
-  <update id="deleteBatch" parameterType="java.lang.Integer">
+  <update id="deleteBatch" parameterType="java.lang.Long">
     update tb_link SET is_deleted=1
     where link_id in
     <foreach item="id" collection="array" open="(" separator="," close=")">

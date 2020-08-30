@@ -1,5 +1,6 @@
 package com.HYX.webDev.dao;
 
+import com.HYX.webDev.entity.Blog;
 import com.HYX.webDev.entity.BlogCategory;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;

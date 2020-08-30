@@ -7,7 +7,9 @@ public class contact {
 
     private String contactName;
 
-    private Long contactPhoneNumber;
+    private String contactEmail;
+
+    private String contactPhoneNumber;
 
     private String contactCompany;
 
@@ -31,12 +33,20 @@ public class contact {
         this.contactName = contactName == null ? null : contactName.trim();
     }
 
-    public Long getContactPhoneNumber() {
+    public String getContactEmail() {
+        return contactEmail;
+    }
+
+    public void setContactEmail(String contactEmail) {
+        this.contactEmail = contactEmail == null ? null : contactEmail.trim();
+    }
+
+    public String getContactPhoneNumber() {
         return contactPhoneNumber;
     }
 
-    public void setContactPhoneNumber(Long contactPhoneNumber) {
-        this.contactPhoneNumber = contactPhoneNumber;
+    public void setContactPhoneNumber(String contactPhoneNumber) {
+        this.contactPhoneNumber = contactPhoneNumber == null ? null : contactPhoneNumber.trim();
     }
 
     public String getContactCompany() {
@@ -71,6 +81,7 @@ public class contact {
         sb.append("Hash = ").append(hashCode());
         sb.append(", contactId=").append(contactId);
         sb.append(", contactName=").append(contactName);
+        sb.append(", contactEmail=").append(contactEmail);
         sb.append(", contactPhoneNumber=").append(contactPhoneNumber);
         sb.append(", contactCompany=").append(contactCompany);
         sb.append(", createTime=").append(createTime);

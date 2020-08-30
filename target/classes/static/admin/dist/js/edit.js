@@ -104,7 +104,6 @@ $(function () {
                  });
    });
    $("#ReturnBlogList").click(function(){
-   console.log("come into return");
    window.location.href = "/admin/blog";
    });
 

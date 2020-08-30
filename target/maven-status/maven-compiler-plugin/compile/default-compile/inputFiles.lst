@@ -1,5 +1,6 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/Blog.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/LinkMapper.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/Impl/ContactServiceImpl.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/CategoryController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/PageUtil.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/FriendLinkController.java
@@ -29,6 +30,8 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/util/MyBlogUtils.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/BlogCategoryService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/AdminController.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/ContactService.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/contactMapper.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/admin/TagController.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/BlogTagService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/BlogTag.java
@@ -39,5 +42,6 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/BlogService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/Impl/LinkServiceImpl.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/contact.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/BlogTagMapper.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/Impl/AdminUserServiceImpl.java
