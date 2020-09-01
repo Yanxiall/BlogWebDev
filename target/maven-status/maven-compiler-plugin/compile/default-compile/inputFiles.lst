@@ -14,6 +14,7 @@
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/BlogCategoryMapper.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/service/LinkService.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/config/MyBlogWebMvcConfigurer.java
+/home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/controller/vo/BlogListVO.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/dao/BlogTagRelationMapper.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/config/KaptchaConfig.java
 /home/hadoop/IdeaProjects/BlogWebDev/src/main/java/com/HYX/webDev/entity/BlogCategory.java

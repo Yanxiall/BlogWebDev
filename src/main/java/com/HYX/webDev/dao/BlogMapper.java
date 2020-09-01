@@ -2,6 +2,7 @@ package com.HYX.webDev.dao;
 
 import com.HYX.webDev.entity.Blog;
 import com.HYX.webDev.entity.BlogCategory;
+import com.HYX.webDev.util.PageUtil;
 
 import java.util.List;
 import java.util.Map;
@@ -26,6 +27,7 @@ public interface BlogMapper {
     int getTotalBlog(Map param);
 
     int deleteBatch(Long[] ids);
+
 
 
 }

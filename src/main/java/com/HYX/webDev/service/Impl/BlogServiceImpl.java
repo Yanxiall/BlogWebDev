@@ -1,5 +1,6 @@
 package com.HYX.webDev.service.Impl;
 
+import com.HYX.webDev.controller.vo.BlogListVO;
 import com.HYX.webDev.dao.BlogCategoryMapper;
 import com.HYX.webDev.dao.BlogMapper;
 import com.HYX.webDev.dao.BlogTagMapper;
@@ -12,14 +13,15 @@ import com.HYX.webDev.service.BlogService;
 import com.HYX.webDev.util.PageResult;
 import com.HYX.webDev.util.PageUtil;
 import com.HYX.webDev.util.ResultGenerator;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+
 @Service
 public class BlogServiceImpl implements BlogService {
     @Autowired
@@ -103,5 +105,47 @@ public class BlogServiceImpl implements BlogService {
             return true;
         }
         return false;
+    }
+    //get blog information and page information from backend
+    @Override
+    public PageResult getBlogsForIndexPage(int page){
+        Map params = new HashMap();
+        params.put("page", page);
+        //4 record of every page
+        params.put("limit", 4);
+        params.put("blogStatus", 1);//filter the publish blog
+        PageUtil pageUtil = new PageUtil(params);
+        List<Blog> blogList = blogMapper.findBlog(pageUtil);
+        List<BlogListVO> blogListVOS = getBlogListVOsByBlogs(blogList);
+        int total = blogMapper.getTotalBlog(pageUtil);
+        PageResult pageResult = new PageResult(blogListVOS, total, pageUtil.getLimit(), pageUtil.getPage());
+        return pageResult;
+    }
+
+    private List<BlogListVO> getBlogListVOsByBlogs(List<Blog> blogList) {
+        List<BlogListVO> blogListVOS = new ArrayList<>();
+        if (!CollectionUtils.isEmpty(blogList)) {
+            List<Integer> categoryIds = blogList.stream().map(Blog::getBlogCategoryId).collect(Collectors.toList());
+            Map<Integer, String> blogCategoryMap = new HashMap<>();
+            if (!CollectionUtils.isEmpty(categoryIds)) {
+                List<BlogCategory> blogCategories = blogCategoryMapper.selectByCategoryIds(categoryIds);
+                if (!CollectionUtils.isEmpty(blogCategories)) {
+                    blogCategoryMap = blogCategories.stream().collect(Collectors.toMap(BlogCategory::getCategoryId, BlogCategory::getCategoryIcon, (key1, key2) -> key2));
+                }
+            }
+            for (Blog blog : blogList) {
+                BlogListVO blogListVO = new BlogListVO();
+                BeanUtils.copyProperties(blog, blogListVO);
+                if (blogCategoryMap.containsKey(blog.getBlogCategoryId())) {
+                    blogListVO.setBlogCategoryIcon(blogCategoryMap.get(blog.getBlogCategoryId()));
+                } else {
+                    blogListVO.setBlogCategoryId(0);
+                    blogListVO.setBlogCategoryName("default category");
+                    blogListVO.setBlogCategoryIcon("/admin/dist/img/category/1.png");
+                }
+                blogListVOS.add(blogListVO);
+            }
+        }
+        return blogListVOS;
     }
 }

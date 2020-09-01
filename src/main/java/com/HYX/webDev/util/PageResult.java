@@ -5,9 +5,9 @@ import java.util.List;
 
 public class PageResult implements Serializable {
 
-    //total pieces
+    //total records
     private int totalCount;
-    //pieces number of every page
+    //record number of every page
     private int pageSize;
     //total pages
     private int totalPage;

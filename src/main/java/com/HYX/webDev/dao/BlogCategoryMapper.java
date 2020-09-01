@@ -3,6 +3,7 @@ package com.HYX.webDev.dao;
 import com.HYX.webDev.entity.Blog;
 import com.HYX.webDev.entity.BlogCategory;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -28,4 +29,6 @@ public interface BlogCategoryMapper {
     int deleteBatch(Integer[] ids);
 
     int updateByPrimaryKey(BlogCategory record);
+
+    List<BlogCategory> selectByCategoryIds(@Param("categoryIds") List<Integer> categoryIds);
 }

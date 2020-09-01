@@ -8,4 +8,5 @@ public interface BlogService {
     public String saveBlog(Blog blog);
     PageResult getBlogPage(PageUtil pageUtil);
     public Boolean DeleteBlogBatch(Long[] ids);
+    PageResult getBlogsForIndexPage(int page);
 }
