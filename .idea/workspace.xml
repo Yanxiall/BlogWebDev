@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0685d116-3573-4959-bed8-a1096daa8e3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BlogWebDev.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/blog/blogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/blog/blogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/projects.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/js/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/js/project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/search.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/blog/blogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/blog/blogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/projects.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/js/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/js/project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/search.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

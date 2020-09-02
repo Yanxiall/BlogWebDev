@@ -33,11 +33,21 @@ text-transform: uppercase;
 #mainnav .nav-link:hover {
 background-color:#c3c2c7;
 }
-.clean-searchbox{
-    display: block;
+.search{
     width:100%;
-    text-align: right;
+    padding-left:20px;
+}
+.searchname{
+   float:left;
+   color:green;
+
+.searchname p{
+color:black;
+}
+}
+.clean-searchbox{
     margin-bottom: 20px;
+    float:right;
 }
 #searchbox {
 border:1px solid #a3adb7;

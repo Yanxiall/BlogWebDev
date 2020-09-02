@@ -64,7 +64,6 @@ public class blogController {
     //project page
     @GetMapping({"/projects"})
     public String projects(HttpServletRequest request) {
-        request.setAttribute("hotTags", blogTagService.BlogTagShow());
          return this.page(request, 1);
     }
     @GetMapping({"/page/{pageNum}"})
@@ -73,6 +72,7 @@ public class blogController {
         if (blogPageResult == null) {
             return "error";
         }
+        request.setAttribute("hotTags", blogTagService.BlogTagShow());
         request.setAttribute("blogPageResult", blogPageResult);
 
         return "blog/projects";
@@ -90,7 +90,9 @@ public class blogController {
         if (blogPageResult== null) {
             return "error";
         }
+        request.setAttribute("pageName","Search");
         request.setAttribute("keyword",keyword);
+        request.setAttribute("pageurl", "search");
         request.setAttribute("blogPageResult", blogPageResult);
         return "blog/search";
     }

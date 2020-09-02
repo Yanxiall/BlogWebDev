@@ -19,13 +19,18 @@
                 <div class="section-title">
                     <h2>Projects</h2><!-- section title -->
                 </div>
-                <div class="clean-searchbox">
+                <div class="search">
+                    <div class="searchname">
+                        <p><span class="font-weight-bold" th:text="@{${pageName} + ':'}">&nbsp;</span><span th:text="${keyword}"></span></p>
+                    </div>
+                   <div class="clean-searchbox">
                     <form action="#" method="get" onsubmit="return false;" accept-charset="utf-8">
-                        <input class="searchfield" id="searchbox" type="text" th:value="${keyword}" placeholder="Please enter your keyword">
+                        <input class="searchfield" id="searchbox" type="text"  placeholder="Please enter your keyword">
                         <button class="searchbutton" id="searchbutton" onclick="search()">
                             <i class="fa fa-search"></i>
                         </button>
                     </form>
+                   </div>
                 </div>
                 <th:block th:if="${null != blogPageResult}">
                      <th:block th:each="blog,iterStat : ${blogPageResult.list}">
@@ -61,29 +66,29 @@
                 <th:block th:if="${null != blogPageResult}">
                   <ul class="blog-pagination">
                     <li th:class="${blogPageResult.currPage==1}?'disabled' : ''"><a
-                            th:href="@{${blogPageResult.currPage==1}?'##':'/search/' + ${blogPageResult.currPage-1}} +'/' + ${keyword}">&laquo;</a>
+                            th:href="@{${blogPageResult.currPage==1}?'##':'/blog/'+ ${pageurl} +'/' + ${blogPageResult.currPage-1}} +'/' + ${keyword}">&laquo;</a>
                     </li>
                     <li th:if="${blogPageResult.currPage-3 >=1}"><a
-                            th:href="@{'/search/' + ${blogPageResult.currPage-3} + '/' + ${keyword}}"
+                            th:href="@{'/blog/'+ ${pageurl} +'/' + ${blogPageResult.currPage-3} + '/' + ${keyword}}"
                             th:text="${blogPageResult.currPage -3}">1</a></li>
                     <li th:if="${blogPageResult.currPage-2 >=1}"><a
-                            th:href="@{'/search/' + ${blogPageResult.currPage-2} + '/' + ${keyword}}"
+                            th:href="@{'/blog/'+ ${pageurl} +'/' + ${blogPageResult.currPage-2} + '/' + ${keyword}}"
                             th:text="${blogPageResult.currPage -2}">1</a></li>
                     <li th:if="${blogPageResult.currPage-1 >=1}"><a
-                            th:href="@{'/search/' + ${blogPageResult.currPage-1}+ '/' + ${keyword}}"
+                            th:href="@{'/blog/'+ ${pageurl} +'/' + ${blogPageResult.currPage-1}+ '/' + ${keyword}}"
                             th:text="${blogPageResult.currPage -1}">1</a></li>
                     <li class="active"><a href="#" th:text="${blogPageResult.currPage}">1</a></li>
                     <li th:if="${blogPageResult.currPage+1 <=blogPageResult.totalPage}"><a
-                            th:href="@{'/search/' + ${blogPageResult.currPage+1}+ '/' + ${keyword}}"
+                            th:href="@{'/blog/'+ ${pageurl} +'/' + ${blogPageResult.currPage+1}+ '/' + ${keyword}}"
                             th:text="${blogPageResult.currPage +1}">1</a></li>
                     <li th:if="${blogPageResult.currPage+2 <=blogPageResult.totalPage}"><a
-                            th:href="@{'/search/' + ${blogPageResult.currPage+2}+ '/' + ${keyword}}"
+                            th:href="@{'/blog/'+ ${pageurl} + '/' + ${blogPageResult.currPage+2}+ '/' + ${keyword}}"
                             th:text="${blogPageResult.currPage +2}">1</a></li>
                     <li th:if="${blogPageResult.currPage+3 <=blogPageResult.totalPage}"><a
-                            th:href="@{'/search/' + ${blogPageResult.currPage+3}+ '/' + ${keyword}}"
+                            th:href="@{'/blog/'+ ${pageurl} + '/'  + ${blogPageResult.currPage+3}+ '/' + ${keyword}}"
                             th:text="${blogPageResult.currPage +3}">1</a></li>
                     <li th:class="${blogPageResult.currPage==blogPageResult.totalPage}?'disabled' : ''"><a
-                            th:href="@{${blogPageResult.currPage==blogPageResult.totalPage}?'##' : '/search/' + ${blogPageResult.currPage+1}+ '/' + ${keyword}}">&raquo;</a>
+                            th:href="@{${blogPageResult.currPage==blogPageResult.totalPage}?'##' : '/blog/'+ ${pageurl} +'/'  + ${blogPageResult.currPage+1}+ '/' + ${keyword}}">&raquo;</a>
                     </li>
                   </ul>
                 </th:block>

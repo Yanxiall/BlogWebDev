@@ -154,7 +154,7 @@ public class BlogServiceImpl implements BlogService {
         params.put("page",  pageNum);
         params.put("keyword",keyword);
         //4 record of every page
-        params.put("limit", 4);
+        params.put("limit", 6);
         params.put("blogStatus", 1);//filter the publish blog
         PageUtil pageUtil = new PageUtil(params);
         List<Blog> blogList = blogMapper.findBlog(pageUtil);
