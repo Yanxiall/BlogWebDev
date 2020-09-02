@@ -148,4 +148,20 @@ public class BlogServiceImpl implements BlogService {
         }
         return blogListVOS;
     }
+    @Override
+    public PageResult getBlogsPageBySearch(int pageNum,String keyword){
+        Map params = new HashMap();
+        params.put("page",  pageNum);
+        params.put("keyword",keyword);
+        //4 record of every page
+        params.put("limit", 4);
+        params.put("blogStatus", 1);//filter the publish blog
+        PageUtil pageUtil = new PageUtil(params);
+        List<Blog> blogList = blogMapper.findBlog(pageUtil);
+        List<BlogListVO> blogListVOS = getBlogListVOsByBlogs(blogList);
+        int total = blogMapper.getTotalBlog(pageUtil);
+        PageResult pageResult = new PageResult(blogListVOS, total, pageUtil.getLimit(), pageUtil.getPage());
+        return pageResult;
+
+    }
 }

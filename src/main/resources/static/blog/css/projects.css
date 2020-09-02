@@ -33,13 +33,19 @@ text-transform: uppercase;
 #mainnav .nav-link:hover {
 background-color:#c3c2c7;
 }
+.clean-searchbox{
+    display: block;
+    width:100%;
+    text-align: right;
+}
 #searchbox {
-border:none;
+border:1px solid #a3adb7;
 padding: 3px 30px 3px 20px;
 background-color:#f6e5ff;
 color:#5e5f60;
 font-family: "Times New Roman", Times, serif;
 font-size:16px;
+border-radius: 4px;
 }
 #searchbox:focus,
 #searchbox:hover{
@@ -109,7 +115,7 @@ font-family: "Times New Roman", Times, serif;
 font-size:15px;
 }
 .blog-main,.blog-aside{
-    margin-top:50px;
+    margin-top:20px;
     margin-bottom: 20px;
 }
 .blog-main-card{

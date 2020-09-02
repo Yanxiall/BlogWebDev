@@ -9,4 +9,5 @@ public interface BlogService {
     PageResult getBlogPage(PageUtil pageUtil);
     public Boolean DeleteBlogBatch(Long[] ids);
     PageResult getBlogsForIndexPage(int page);
+    PageResult getBlogsPageBySearch(int pageNum,String keyword);
 }

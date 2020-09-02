@@ -154,7 +154,7 @@
     from tb_blog
     where is_deleted=0
     <if test="keyword!=null">
-      AND (blog_title like CONCAT('%','${keyword}','%' ) or blog_category_name like CONCAT('%','${keyword}','%' ))
+      AND (blog_title like CONCAT('%','${keyword}','%' ) or blog_content like CONCAT('%','${keyword}','%' ) or blog_category_name like CONCAT('%','${keyword}','%' ))
     </if>
     <if test="blogStatus!=null">
       AND blog_status = #{blogStatus}
@@ -171,6 +171,16 @@
   <select id="getTotalBlog" parameterType="Map" resultType="int">
     select count(*) from tb_blog
     where is_deleted=0
+    <if test="keyword!=null">
+      AND (blog_title like CONCAT('%','${keyword}','%' ) or blog_content like CONCAT('%','${keyword}','%' ) or blog_category_name like CONCAT('%','${keyword}','%' ))
+    </if>
+    <if test="blogStatus!=null">
+      AND blog_status = #{blogStatus}
+    </if>
+    <if test="blogCategoryId!=null">
+      AND blog_category_id = #{blogCategoryId}
+    </if>
+    order by blog_id desc
   </select>
   <update id="updateByPrimaryKeySelective" parameterType="com.HYX.webDev.entity.Blog">
     update tb_blog

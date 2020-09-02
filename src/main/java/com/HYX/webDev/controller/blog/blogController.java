@@ -71,15 +71,28 @@ public class blogController {
     public String page(HttpServletRequest request, @PathVariable("pageNum") int pageNum) {
         PageResult blogPageResult = blogService.getBlogsForIndexPage(pageNum);
         if (blogPageResult == null) {
-            return "error/error_404";
+            return "error";
         }
         request.setAttribute("blogPageResult", blogPageResult);
 
         return "blog/projects";
     }
 
+    //project page
+    @GetMapping({"/search/{keyword}"})
+    public String search(HttpServletRequest request,@PathVariable("keyword") String keyword) {
+        return this.search(request, 1,keyword);
+    }
 
-
-
+    @GetMapping({"/search/{pageNum}/{keyword}"})
+    public String search(HttpServletRequest request,@PathVariable("pageNum") int pageNum,@PathVariable("keyword") String keyword) {
+        PageResult blogPageResult = blogService.getBlogsPageBySearch(pageNum,keyword);
+        if (blogPageResult== null) {
+            return "error";
+        }
+        request.setAttribute("keyword",keyword);
+        request.setAttribute("blogPageResult", blogPageResult);
+        return "blog/search";
+    }
 
 }
