@@ -10,4 +10,5 @@ public interface BlogService {
     public Boolean DeleteBlogBatch(Long[] ids);
     PageResult getBlogsForIndexPage(int page);
     PageResult getBlogsPageBySearch(int pageNum,String keyword);
+    PageResult getBlogsPageByCategory(int pageNum,String categoryName);
 }

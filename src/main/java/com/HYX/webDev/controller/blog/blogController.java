@@ -61,7 +61,7 @@ public class blogController {
         }
     }
 
-    //project page
+    //project webpage
     @GetMapping({"/projects"})
     public String projects(HttpServletRequest request) {
          return this.page(request, 1);
@@ -78,7 +78,7 @@ public class blogController {
         return "blog/projects";
     }
 
-    //project page
+    //search webpage
     @GetMapping({"/search/{keyword}"})
     public String search(HttpServletRequest request,@PathVariable("keyword") String keyword) {
         return this.search(request, 1,keyword);
@@ -93,6 +93,24 @@ public class blogController {
         request.setAttribute("pageName","Search");
         request.setAttribute("keyword",keyword);
         request.setAttribute("pageurl", "search");
+        request.setAttribute("blogPageResult", blogPageResult);
+        return "blog/search";
+    }
+    //category search result
+    @GetMapping({"/category/{blogCategoryName}"})
+    public String searchCategory(HttpServletRequest request,@PathVariable("blogCategoryName") String blogCategoryName) {
+        return this.searchCategory(request, 1,blogCategoryName);
+    }
+
+    @GetMapping({"/category/{pageNum}/{keyword}"})
+    public String searchCategory(HttpServletRequest request,@PathVariable("pageNum") int pageNum,@PathVariable("keyword") String keyword) {
+        PageResult blogPageResult = blogService.getBlogsPageByCategory(pageNum,keyword);
+        if (blogPageResult== null) {
+            return "error";
+        }
+        request.setAttribute("pageName","Category");
+        request.setAttribute("keyword",keyword);
+        request.setAttribute("pageurl", "category");
         request.setAttribute("blogPageResult", blogPageResult);
         return "blog/search";
     }

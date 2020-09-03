@@ -159,8 +159,8 @@
     <if test="blogStatus!=null">
       AND blog_status = #{blogStatus}
     </if>
-    <if test="blogCategoryId!=null">
-      AND blog_category_id = #{blogCategoryId}
+    <if test="blogCategoryName!=null">
+      AND blog_category_name = #{blogCategoryName}
     </if>
     order by blog_id desc
     <if test="start!=null and limit!=null">
@@ -177,8 +177,8 @@
     <if test="blogStatus!=null">
       AND blog_status = #{blogStatus}
     </if>
-    <if test="blogCategoryId!=null">
-      AND blog_category_id = #{blogCategoryId}
+    <if test="blogCategoryName!=null">
+      AND blog_category_name = #{blogCategoryName}
     </if>
     order by blog_id desc
   </select>
