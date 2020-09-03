@@ -61,6 +61,11 @@
                         </th:block>
                      </th:block>
                 </th:block>
+                <th:block th:if="@{JSON.stringify(${blogPageResult.list}) === '[]'}">
+                    <div class="showNothing">
+                       <p><span th:text="${message}"></span></p>
+                    </div>
+                </th:block>
             </div>
             <div class="page">
                 <th:block th:if="${null != blogPageResult}">

@@ -179,6 +179,7 @@ public class BlogServiceImpl implements BlogService {
         PageResult pageResult = new PageResult(blogListVOS, total, pageUtil.getLimit(), pageUtil.getPage());
         return pageResult;
     }
+    //search blog by tag
     @Override
     public PageResult getBlogsPageByTag(int pageNum,String tagName){
         BlogTag tag = blogTagMapper.selectByTagName(tagName);

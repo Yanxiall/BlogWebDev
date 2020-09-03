@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0685d116-3573-4959-bed8-a1096daa8e3b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/blog/blogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/blog/blogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/Blog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/util/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/blog/blogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/blog/blogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/Blog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogTag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/util/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/util/PageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +52,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RunManager">
-    <configuration name="MyBlogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MyBlogApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.HYX.webDev.MyBlogApplication" />
       <module name="web_dev" />
       <extension name="coverage">
@@ -70,11 +65,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MyBlogApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -90,6 +80,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="253" y="24" width="938" height="744" key="#MyBlogApplication" timestamp="1599141561116">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="253" y="24" width="938" height="744" key="#MyBlogApplication/65.24.1301.744@65.24.1301.744" timestamp="1599141561116" />
+    <state x="142" y="86" width="1145" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599141692255">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="142" y="86" width="1145" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1301.744@65.24.1301.744" timestamp="1599141692255" />
+    <state x="459" y="187" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599141649517">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="459" y="187" key="#com.intellij.ide.util.TreeClassChooserDialog/65.24.1301.744@65.24.1301.744" timestamp="1599141649517" />
     <state width="1249" height="238" key="GridCell.Tab.0.bottom" timestamp="1598734022460">
       <screen x="65" y="24" width="1301" height="744" />
     </state>

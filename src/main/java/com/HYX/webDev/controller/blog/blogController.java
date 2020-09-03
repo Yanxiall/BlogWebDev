@@ -87,8 +87,14 @@ public class blogController {
     @GetMapping({"/search/{pageNum}/{keyword}"})
     public String search(HttpServletRequest request,@PathVariable("pageNum") int pageNum,@PathVariable("keyword") String keyword) {
         PageResult blogPageResult = blogService.getBlogsPageBySearch(pageNum,keyword);
+        if(blogPageResult.list.isEmpty()){
+            request.setAttribute("pageName","Search");
+            request.setAttribute("keyword",keyword);
+            request.setAttribute("message","Nothing is found here!");
+            return "blog/search";
+        }
         if (blogPageResult== null) {
-            return "error";
+            return "blog/search";
         }
         request.setAttribute("pageName","Search");
         request.setAttribute("keyword",keyword);
@@ -124,8 +130,11 @@ public class blogController {
     @GetMapping({"/tag/{pageNum}/{keyword}"})
     public String searchTag(HttpServletRequest request,@PathVariable("pageNum") int pageNum,@PathVariable("keyword") String keyword) {
         PageResult blogPageResult = blogService.getBlogsPageByTag(pageNum,keyword);
+
         if (blogPageResult== null) {
-            return "error";
+            System.out.println(blogPageResult);
+            request.setAttribute("error","Nothing is found");
+            return "blog/search";
         }
         request.setAttribute("pageName","Tag");
         request.setAttribute("keyword",keyword);

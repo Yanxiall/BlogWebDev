@@ -157,4 +157,10 @@ color:#343a40;
 background-color:#007bff;
 color:#fff;
 }
+.showNothing{
+    margin:40px auto;
 
+}
+.showNothing span{
+    color:red;
+}

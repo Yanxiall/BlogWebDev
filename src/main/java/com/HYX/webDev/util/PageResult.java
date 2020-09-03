@@ -13,7 +13,7 @@ public class PageResult implements Serializable {
     private int totalPage;
     //current page
     private int currPage;
-    private List<?> list;
+    public List<?> list;
 
 
     public PageResult(List<?> list, int totalCount, int pageSize, int currPage) {
