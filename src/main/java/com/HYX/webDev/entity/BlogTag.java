@@ -10,6 +10,7 @@ public class BlogTag {
     private String tagName;
 
     private Byte isDeleted;
+
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+2")
     private Date createTime;
 

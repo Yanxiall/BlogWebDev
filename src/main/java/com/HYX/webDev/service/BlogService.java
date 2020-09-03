@@ -11,4 +11,5 @@ public interface BlogService {
     PageResult getBlogsForIndexPage(int page);
     PageResult getBlogsPageBySearch(int pageNum,String keyword);
     PageResult getBlogsPageByCategory(int pageNum,String categoryName);
+    PageResult getBlogsPageByTag(int pageNum,String tagName);
 }

@@ -148,6 +148,23 @@
       </if>
     </trim>
   </insert>
+  <select id="getBlogsPageByTagId" parameterType="Map" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from tb_blog
+    where is_deleted=0
+    And blog_id in (select blog_id from tb_blog_tag_relation where tag_id = #{tagId}) AND blog_status = #{blogStatus}
+    order by blog_id desc
+    <if test="start!=null and limit!=null">
+      limit #{start},#{limit}
+    </if>
+  </select>
+  <select id="getTotalBlogbyTagId" parameterType="Map" resultType="int">
+    select count(*) from tb_blog
+    where is_deleted=0
+    And blog_id in (select blog_id from tb_blog_tag_relation where tag_id = #{tagId}) AND blog_status = #{blogStatus}
+    order by blog_id desc
+  </select>
   <select id="findBlog" parameterType="Map" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>

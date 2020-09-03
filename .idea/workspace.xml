@@ -4,12 +4,17 @@
     <list default="true" id="0685d116-3573-4959-bed8-a1096daa8e3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/blog/blogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/blog/blogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/dao/BlogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/entity/BlogTag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/service/Impl/BlogServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/blog/blogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/blog/blogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/dao/BlogMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/Blog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/entity/BlogTag.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/BlogService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/service/Impl/BlogServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" afterDir="false" />

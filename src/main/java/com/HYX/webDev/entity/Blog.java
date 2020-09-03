@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
 
 public class Blog {
+
     private Long blogId;
 
     private String blogTitle;
@@ -26,6 +27,7 @@ public class Blog {
     private Byte enableComment;
 
     private Byte isDeleted;
+
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+2")
     private Date createTime;
 

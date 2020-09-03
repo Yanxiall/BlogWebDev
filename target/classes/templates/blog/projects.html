@@ -99,7 +99,7 @@
                             <ul class="tags">
                                 <th:block th:if="${null != hotTags}">
                                     <th:block th:each="hotTag : ${hotTags}">
-                                        <li><a th:href="@{'/tag/' + ${hotTag.tagName}}">
+                                        <li><a th:href="@{'/blog/tag/' + ${hotTag.tagName}}">
                                             <th:block th:text="${hotTag.tagName}+'('+${hotTag.tagCount}+')'"></th:block>
                                         </a>
                                         </li>

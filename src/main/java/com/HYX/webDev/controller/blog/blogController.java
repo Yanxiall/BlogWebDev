@@ -115,4 +115,22 @@ public class blogController {
         return "blog/search";
     }
 
+    //tag search result
+    @GetMapping({"/tag/{tagName}"})
+    public String searchTag(HttpServletRequest request,@PathVariable("tagName") String tagName) {
+        return this.searchTag(request, 1,tagName);
+    }
+
+    @GetMapping({"/tag/{pageNum}/{keyword}"})
+    public String searchTag(HttpServletRequest request,@PathVariable("pageNum") int pageNum,@PathVariable("keyword") String keyword) {
+        PageResult blogPageResult = blogService.getBlogsPageByTag(pageNum,keyword);
+        if (blogPageResult== null) {
+            return "error";
+        }
+        request.setAttribute("pageName","Tag");
+        request.setAttribute("keyword",keyword);
+        request.setAttribute("pageurl", "tag");
+        request.setAttribute("blogPageResult", blogPageResult);
+        return "blog/search";
+    }
 }
