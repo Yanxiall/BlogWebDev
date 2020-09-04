@@ -34,7 +34,7 @@
                                 <div class="col-md-6 col-sm-6 blog-main-card">
                                     <article class="blog-summary">
                                         <header>
-                                            <a th:href="@{'/blog/' + ${blog.blogId}}">
+                                            <a th:href="@{'/blog/detail/' + ${blog.blogId}}">
                                                 <img th:src="@{${blog.blogCoverImage}}" alt="">
                                                 <h3>
                                                     <th:block th:text="${blog.blogTitle}"></th:block>

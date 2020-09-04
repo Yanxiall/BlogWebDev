@@ -1,5 +1,8 @@
 package com.HYX.webDev.controller.blog;
 
+import com.HYX.webDev.controller.vo.BlogDetailVo;
+import com.HYX.webDev.dao.BlogMapper;
+import com.HYX.webDev.entity.Blog;
 import com.HYX.webDev.entity.contact;
 import com.HYX.webDev.service.BlogService;
 import com.HYX.webDev.service.BlogTagService;
@@ -25,6 +28,8 @@ public class blogController {
     private ContactService contactService;
     @Resource
     private BlogService blogService;
+    @Resource
+    private BlogMapper blogMapper;
 
     //homepage
     @GetMapping({"/index", "/", "/index.html"})
@@ -142,4 +147,13 @@ public class blogController {
         request.setAttribute("blogPageResult", blogPageResult);
         return "blog/search";
     }
+    @GetMapping({"/detail/{blogId}"})
+    public String DetailBlog(HttpServletRequest request,@PathVariable("blogId")Long blogId){
+        BlogDetailVo blogDetailVo = blogService.getBlogDetail(blogId);
+        if (blogDetailVo != null) {
+            request.setAttribute("blogDetailVo", blogDetailVo);
+        }
+        return "blog/blogdetail";
+    }
+
 }

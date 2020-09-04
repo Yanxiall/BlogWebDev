@@ -8,10 +8,12 @@ com/HYX/webDev/service/ContactService.class
 com/HYX/webDev/service/LinkService.class
 com/HYX/webDev/service/BlogService.class
 com/HYX/webDev/dao/LinkMapper.class
+com/HYX/webDev/controller/vo/BlogDetailVo.class
 com/HYX/webDev/util/PageUtil.class
 com/HYX/webDev/util/ResultGenerator.class
 com/HYX/webDev/entity/BlogTag.class
 com/HYX/webDev/service/Impl/LinkServiceImpl.class
+com/HYX/webDev/util/MarkDownUtil.class
 com/HYX/webDev/controller/admin/BlogManage.class
 com/HYX/webDev/service/BlogCategoryService.class
 com/HYX/webDev/service/Impl/BlogTagImpl.class
