@@ -89,13 +89,18 @@ margin-bottom:60px;
   position: relative;
   margin-bottom: 50px;
 }
-.advantage-right p.clr-ninghty {
-    width: 90%;
-    background: #ff4f81;
-    height: 8px;
+.info-list{
+    display: :inline-block;
 }
-.advantage-right p.clr-eighty-five {
-    width: 85%;
-    background: #0dd3ff;
-    height: 8px;
+.info-list li{
+    padding-bottom:20px;
+}
+.info-list li .title{
+    display:inline-block;
+    width:150px;
+    font-weight:500;
+
+}
+.info-list li .value{
+
 }

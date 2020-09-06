@@ -42,6 +42,11 @@ public class blogController {
         return "blog/contact";
     }
 
+    @GetMapping({"/resume"})
+    public String resume() {
+        return "blog/resume";
+    }
+
     //save the contact information
     @PostMapping("/save")
     @ResponseBody
