@@ -6,9 +6,8 @@
     margin: 50px 0 0px;
 }
 .projectsbanner{
-height:210px;
+height:268px;
 display:block;
-background: url(../img/banner.png) no-repeat;
 background-size:cover;
 position:relative;
 }
