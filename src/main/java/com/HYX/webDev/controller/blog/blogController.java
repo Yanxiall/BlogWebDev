@@ -8,6 +8,7 @@ import com.HYX.webDev.service.BlogService;
 import com.HYX.webDev.service.BlogTagService;
 import com.HYX.webDev.service.ContactService;
 import com.HYX.webDev.util.*;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -164,21 +165,19 @@ public class blogController {
     }
     @GetMapping("/download")
     @ResponseBody
-    public String downloadFile(HttpServletRequest request, HttpServletResponse response) {
+    public String downloadFile(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String fileName = "Yanxia_HE_CV.pdf";
         if (fileName != null) {
             //set file path
-            File file = new File("/home/hadoop/IdeaProjects/BlogWebDev/src/main/resources/static/blog/Yanxia_HE_CV.pdf");
-            if (file.exists()) {
-                System.out.println("come in");
+            ClassPathResource classPathResource = new ClassPathResource("static/blog/Yanxia_HE_CV.pdf");
+            if (classPathResource != null) {
+                InputStream is = classPathResource.getInputStream();
                 response.setContentType("application/force-download");// force download without opening
                 response.addHeader("Content-Disposition", "attachment;fileName=" + fileName);// set file name
                 byte[] buffer = new byte[1024];
-                FileInputStream fis = null;
                 BufferedInputStream bis = null;
                 try {
-                    fis = new FileInputStream(file);
-                    bis = new BufferedInputStream(fis);
+                    bis = new BufferedInputStream(is);
                     OutputStream os = response.getOutputStream();
                     int i = bis.read(buffer);
                     while (i != -1) {
@@ -196,9 +195,9 @@ public class blogController {
                             e.printStackTrace();
                         }
                     }
-                    if (fis != null) {
+                    if (is != null) {
                         try {
-                            fis.close();
+                            is.close();
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
