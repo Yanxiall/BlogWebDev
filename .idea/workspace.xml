@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0685d116-3573-4959-bed8-a1096daa8e3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
