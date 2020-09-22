@@ -4,7 +4,7 @@
 <link rel="stylesheet" th:href="@{/blog/css/search.css}"/>
 <body>
 <!--banner-->
-<div class="projectsbanner">
+<div class="projectsbanner" th:style="'background:url(' + @{/blog/img/banner.png} + ') no-repeat;'">
     <header th:replace="blog/header::nav-fragment"></header>
     <div class="projectsbanner-info">
         <h2 class="motto">stay hungry</h2>
