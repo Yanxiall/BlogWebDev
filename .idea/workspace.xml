@@ -3,12 +3,110 @@
   <component name="ChangeListManager">
     <list default="true" id="0685d116-3573-4959-bed8-a1096daa8e3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/config/MyBlogWebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/config/MyBlogWebMvcConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/BlogEditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/admin/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatisGeneratorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/config/MyBlogWebMvcConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/config/MyBlogWebMvcConfigurer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/BlogEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/BlogEditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HYX/webDev/controller/admin/UploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatisGeneratorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/img/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/img/background2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/img/background3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/dist/img/background4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/editor.md-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jQuery-Tags-Input/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/addons/ui.multiselect.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/addons/ui.multiselect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-el.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-he.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-is.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-no.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/admin/plugins/jqGrid-5.3.0/js/i18n/grid.locale-uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/Yanxia HE_CV.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/Blog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/Work1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/Work4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/Work_Ready.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/banner2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/banner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/banner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/banner4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/banner5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/blog-banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/blog-banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/blogs-banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/computer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/images.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/photo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/project3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/project4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/project5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/projects.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/projects1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/projects2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/projectsbanner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/unnamed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/work2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/work3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/work4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/img/work6.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.HYX.webDev.MyBlogApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.HYX.webDev.MyBlogApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.HYX.webDev.MyBlogApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.HYX.webDev.MyBlogApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web_dev-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_dev-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web_dev-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_dev-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/20180524112445336.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/2020-05-14 21-32-08屏幕截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/2020-05-14 21-32-08屏幕截图1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/2020-05-14 21-32-08屏幕截图2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/2020-05-14 21-32-08屏幕截图3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/2020-05-14 21-32-08屏幕截图4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/2020-05-14 21-32-08屏幕截图5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/2020-05-15 16-01-22屏幕截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/test3.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,10 +184,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="253" y="24" width="938" height="744" key="#MyBlogApplication" timestamp="1599141561116">
+    <state x="253" y="24" width="938" height="744" key="#MyBlogApplication" timestamp="1601987892636">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="253" y="24" width="938" height="744" key="#MyBlogApplication/65.24.1301.744@65.24.1301.744" timestamp="1599141561116" />
+    <state x="253" y="24" width="938" height="744" key="#MyBlogApplication/65.24.1301.744@65.24.1301.744" timestamp="1601987892636" />
     <state x="142" y="86" width="1145" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599141692255">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
@@ -110,42 +208,46 @@
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="360" y="138" key="FileChooserDialogImpl/65.24.1301.744@65.24.1301.744" timestamp="1599213920573" />
-    <state width="1249" height="238" key="GridCell.Tab.0.bottom" timestamp="1598734022460">
+    <state width="1249" height="130" key="GridCell.Tab.0.bottom" timestamp="1602060534551">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="238" key="GridCell.Tab.0.bottom/65.24.1301.744@65.24.1301.744" timestamp="1598734022460" />
-    <state width="1249" height="238" key="GridCell.Tab.0.center" timestamp="1598734022459">
+    <state width="1249" height="130" key="GridCell.Tab.0.bottom/65.24.1301.744@65.24.1301.744" timestamp="1602060534551" />
+    <state width="1249" height="130" key="GridCell.Tab.0.center" timestamp="1602060534549">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="238" key="GridCell.Tab.0.center/65.24.1301.744@65.24.1301.744" timestamp="1598734022459" />
-    <state width="1249" height="238" key="GridCell.Tab.0.left" timestamp="1598734022458">
+    <state width="1249" height="130" key="GridCell.Tab.0.center/65.24.1301.744@65.24.1301.744" timestamp="1602060534549" />
+    <state width="1249" height="130" key="GridCell.Tab.0.left" timestamp="1602060534549">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="238" key="GridCell.Tab.0.left/65.24.1301.744@65.24.1301.744" timestamp="1598734022458" />
-    <state width="1249" height="238" key="GridCell.Tab.0.right" timestamp="1598734022459">
+    <state width="1249" height="130" key="GridCell.Tab.0.left/65.24.1301.744@65.24.1301.744" timestamp="1602060534549" />
+    <state width="1249" height="130" key="GridCell.Tab.0.right" timestamp="1602060534550">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="238" key="GridCell.Tab.0.right/65.24.1301.744@65.24.1301.744" timestamp="1598734022459" />
-    <state width="1249" height="238" key="GridCell.Tab.1.bottom" timestamp="1598734022462">
+    <state width="1249" height="130" key="GridCell.Tab.0.right/65.24.1301.744@65.24.1301.744" timestamp="1602060534550" />
+    <state width="1249" height="238" key="GridCell.Tab.1.bottom" timestamp="1602017722329">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="238" key="GridCell.Tab.1.bottom/65.24.1301.744@65.24.1301.744" timestamp="1598734022462" />
-    <state width="1249" height="238" key="GridCell.Tab.1.center" timestamp="1598734022461">
+    <state width="1249" height="238" key="GridCell.Tab.1.bottom/65.24.1301.744@65.24.1301.744" timestamp="1602017722329" />
+    <state width="1249" height="238" key="GridCell.Tab.1.center" timestamp="1602017722328">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="238" key="GridCell.Tab.1.center/65.24.1301.744@65.24.1301.744" timestamp="1598734022461" />
-    <state width="1249" height="238" key="GridCell.Tab.1.left" timestamp="1598734022460">
+    <state width="1249" height="238" key="GridCell.Tab.1.center/65.24.1301.744@65.24.1301.744" timestamp="1602017722328" />
+    <state width="1249" height="238" key="GridCell.Tab.1.left" timestamp="1602017722327">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="238" key="GridCell.Tab.1.left/65.24.1301.744@65.24.1301.744" timestamp="1598734022460" />
-    <state width="1249" height="238" key="GridCell.Tab.1.right" timestamp="1598734022461">
+    <state width="1249" height="238" key="GridCell.Tab.1.left/65.24.1301.744@65.24.1301.744" timestamp="1602017722327" />
+    <state width="1249" height="238" key="GridCell.Tab.1.right" timestamp="1602017722328">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="238" key="GridCell.Tab.1.right/65.24.1301.744@65.24.1301.744" timestamp="1598734022461" />
+    <state width="1249" height="238" key="GridCell.Tab.1.right/65.24.1301.744@65.24.1301.744" timestamp="1602017722328" />
     <state x="233" y="25" width="1024" height="743" key="SettingsEditor" timestamp="1599222980619">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="233" y="25" width="1024" height="743" key="SettingsEditor/65.24.1301.744@65.24.1301.744" timestamp="1599222980619" />
+    <state x="165" y="96" width="1101" height="572" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1602017753018">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="165" y="96" width="1101" height="572" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/65.24.1301.744@65.24.1301.744" timestamp="1602017753018" />
     <state x="165" y="96" width="1101" height="572" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598898509129">
       <screen x="65" y="24" width="1301" height="744" />
     </state>

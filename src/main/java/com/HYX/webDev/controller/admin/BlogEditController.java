@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
+import org.springframework.util.ResourceUtils;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -74,6 +74,7 @@ public class BlogEditController {
         {
             return ResultGenerator.genFailResult("Please upload cover image!");
         }
+        System.out.println("coverimage"+CoverImg);
         Blog blog = new Blog();
         blog.setBlogTitle(BlogTitle);
         blog.setBlogTags(BlogTag);
@@ -97,12 +98,22 @@ public class BlogEditController {
                                      HttpServletResponse response,
                                      @RequestParam(name = "editormd-image-file", required = true)
                                              MultipartFile file) throws IOException, URISyntaxException {
-        String FILE_UPLOAD_DIC = "/home/hadoop/IdeaProjects/BlogWebDev/upload/";//upload file to the directory
+
+        File path = new File(ResourceUtils.getURL("classpath:").getPath());
+        System.out.println("path=" + path);
+        if(!path.exists()) {
+            path = new File("");
+        }
+        File upload = new File(path.getAbsolutePath(),"upload/");
+        if(!upload.exists()) {
+            upload.mkdirs();
+        }
+
         String fileName= file.getOriginalFilename();
         String name =  fileName.substring(0, fileName.indexOf("."));
         String suffix = fileName.substring(fileName.lastIndexOf("."));
         //create file
-        File destFile = new File(FILE_UPLOAD_DIC + fileName);
+        File destFile = new File(upload,fileName);
         int i = 1;
         while(destFile.exists()) {
             StringBuilder tempName = new StringBuilder();
@@ -113,14 +124,8 @@ public class BlogEditController {
             i++;
         }
         String fileUrl = MyBlogUtils.getHost(new URI(request.getRequestURL() + "")) + "/upload/" + fileName.substring(0, fileName.indexOf("."))+ suffix;
-        //create file directory
-        File fileDirectory = new File(FILE_UPLOAD_DIC);
+        System.out.println("fileUrl=" + fileUrl);
         try {
-            if (!fileDirectory.exists()) {
-                if (!fileDirectory.mkdir()) {
-                    throw new IOException("create file directory fail:" + fileDirectory);
-                }
-            }
             file.transferTo(destFile);
         } catch (IOException e) {
             e.printStackTrace();
