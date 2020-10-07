@@ -3,7 +3,7 @@ function search(){
    var keyword = $("#searchbox").val();
    if(keyword && keyword !="")
    {
-     window.location.href="/blog/search/" + keyword;
+     window.location.href="/search/" + keyword;
    }
 }
 //press the enter button on the keyboard to search
@@ -13,7 +13,7 @@ $(function () {
     if (key == 13) {
       var keyword = $(this).val();
       if (keyword && keyword != "") {
-        window.location.href = "/blog/search/" + keyword;
+        window.location.href = "/search/" + keyword;
       }
     }
   });

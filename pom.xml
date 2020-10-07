@@ -19,6 +19,7 @@
 	</properties>
 
 	<dependencies>
+
 		<!-- commonmark table -->
 		<dependency>
 			<groupId>com.atlassian.commonmark</groupId>
@@ -91,7 +92,6 @@
 					</resources>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 

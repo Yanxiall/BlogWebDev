@@ -56,7 +56,7 @@ $("#submitContactMessage").click(function(){
         $.ajax
                  ({
                      type: "POST",
-                     url: "/blog/save",
+                     url: "/save",
                      data:data,
                      dataType:"json",
                      success: function(result)
@@ -66,7 +66,7 @@ $("#submitContactMessage").click(function(){
                         swal("Submit success! I will contact you as soon as possible!", {
                                icon: "success"
                                  }).then(function () {
-                               window.location.href = "/blog/index";
+                               window.location.href = "/index";
                                });
                          }
                         else

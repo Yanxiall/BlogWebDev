@@ -23,7 +23,7 @@ import java.util.Map;
 import static com.HYX.webDev.util.ResultGenerator.genSuccessResult;
 
 @Controller
-@RequestMapping("/blog")
+//@RequestMapping("/blog")
 public class blogController {
     @Resource
     private BlogTagService blogTagService;
@@ -35,7 +35,7 @@ public class blogController {
     private BlogMapper blogMapper;
 
     //homepage
-    @GetMapping({"/index", "/", "/index.html"})
+    @GetMapping({"/index", "/", "","/index.html"})
     public String index() {
         return "blog/index";
     }
