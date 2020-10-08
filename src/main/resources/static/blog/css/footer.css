@@ -1,0 +1,13 @@
+footer{
+text-align:center;
+}
+.main-footer{
+background-color:#222222;
+}
+.main-footer p{
+color:white;
+}
+.main-footer .copyright{
+font-size:10px;
+color:#666363;
+}

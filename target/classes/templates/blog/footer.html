@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<footer th:fragment="footer-fragment">
+   <div class="main-footer">
+      <p class="m-2" style="font-size:14px;">Want to contact me?</p>
+      <p class="m-2" style="color:#ffae00;">yanxia_he@126.com | 015756213316</p>
+     <div class="d-flex flex-row justify-content-center">
+         <div class="m-2 " style="background-color: #557cb9;">
+            <a id="index" class="nav-link" style="color:#d8dfe6;" href="https://www.faceboook.com/profile.php?id=100022638463095">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+         </div>
+         <div class="m-2 " style="background-color: #55b98a">
+            <a  class="nav-link" style="color:#d8dfe6;" href="https://www.linkedin.com/in/yanxia-he-429718188">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+         </div>
+         <div class="m-2 " style="background-color: #ffae00;">
+            <a id="github" class="nav-link" style="color:#d8dfe6;" href="https://github.com/Yanxiall">
+                <i class="fab fa-github"></i>
+            </a>
+         </div>
+     </div>
+     <div class="d-flex flex-row justify-content-center">
+           <!-- nav start -->
+           <nav id="mainnav">
+               <ul class="nav nav-pills">
+                   <li class="nav-item ">
+                       <a id="index" class="nav-link" th:href="@{/index}">Home</a>
+                   </li>
+                   <li class="nav-item">
+                       <a  class="nav-link" th:href="@{/resume}">Resume/CV</a>
+                   </li>
+                   <li class="nav-item">
+                       <a id="projects" class="nav-link" th:href="@{/projects}">My Projects</a>
+                   </li>
+                   <li class="nav-item">
+                       <a id="github" class="nav-link" href="https://github.com/Yanxiall">GitHub</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link " th:href="@{/contact}">Contact</a>
+                   </li>
+               </ul>
+           </nav>
+           <!-- nav end -->
+     </div>
+     <p class="copyright">
+       Copyright &copy; 2020. All rights reserved | Yanxia's Blog Version 1.0
+     </p>
+   </div>
+</footer>
+
+</html>

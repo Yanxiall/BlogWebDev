@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/header::header-fragment"></head>
+<style>
+    .content-wrapper{
+      background-color:#bfeee2;
+    }
+    .content{
+      position: absolute;
+      top: 45%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+    }
+    .management{
+       position: relative;
+       left:55px;
+    }
+</style>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+    <div th:replace="admin/header::nav-fragment"></div>
+    <div th:replace="admin/sidebar::sidebar-fragment"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content" >
+            <div class="welcome" style="font-size:300%;color:#ff8500;">WELCOME TO</div>
+            <div class="management" style="font-size:200%;color:#0429f4c4;">BLOG MANAGEMENT SYSTEM</div>
+        </div>
+    </div>
+    <!-- /.content-wrapper -->
+    <div th:replace="admin/footer::footer-fragment"></div>
+</div>
+<!-- jQuery -->
+<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script th:src="@{/admin/plugins/jquery-ui/jquery-ui.min.js}"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<!-- Bootstrap 4 -->
+<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/admin/dist/js/adminlte.js}"></script>
+<!--<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+<script src="https://kit.fontawesome.com/684fe6b1fc.js" crossorigin="anonymous"></script>
+</body>
+</html>
