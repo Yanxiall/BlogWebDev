@@ -1,3 +1,5 @@
+$('.navbar').removeClass('navbar-light');
+$('.navbar').addClass('navbar-dark');
 $("#submitContactMessage").click(function(){
         var contactName = $("#Name").val();
         var contactEmail =  $("#Email").val();
@@ -85,3 +87,4 @@ $("#submitContactMessage").click(function(){
                      }
                  });
    });
+

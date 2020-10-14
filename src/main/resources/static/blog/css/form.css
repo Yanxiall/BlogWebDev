@@ -1,18 +1,36 @@
-/*General */
-html,body{
-  background:url('../img/sun.jpg') no-repeat;
-  background-size: cover;
-  height:100%;
+
+body{
+    background:url('../img/sun.jpg') center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+     height:100%;
+   }
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+.navbar-dark .navbar-nav .nav-link{
+color:white;
 }
-body
-{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-}
+ @media (max-width:800px) {
+   .navbar-nav {
+     background-color:white;
+     z-index:1;
+     display:block;
+     text-align:center;
+     padding:15px 0;
+   }
+    .navbar-dark .navbar-nav .nav-link{
+       color:#007bff;
+    }
+ }
 .list-unstyled{
 list-style:none;
 }
 .information{
 margin:20px;
+left:
 }
 .information h4{
 padding-top:20px;
@@ -55,10 +73,9 @@ border-style:hidden;
 	padding-bottom:50px;
 	width: 450px;
 	float: left;
-	left: 50%;
+	left: 5%;
 	position: absolute;
-    margin-top:30px;
-	margin-left: -120px;
+    margin-top:50px;
     border-radius: 7px;
 }
 .montform input {
@@ -227,9 +244,9 @@ border-style:hidden;
 
 /*Styles for small screens*/
 
-@media  only screen and (max-width: 580px) {
+@media  only screen and (max-width: 800px) {
 	#form-div{
-		left: 3%;
+		left: 7%;
 		margin-right: 3%;
 		width: 88%;
 		margin-left: 0;

@@ -48,23 +48,6 @@ padding-right:40px;
 ul{
   list-style: disc;
 }
-.block-title p.clr-ninghty {
-    width: 90%;
-    background: #ff4f81;
-    height: 5px;
-}
-.skill-list{
-padding-top:20px;
-}
-.skill-list p{
-    font-size: 13px;
-
-}
-.block-title p.clr-eighty-five {
-    width: 85%;
-    background: #0dd3ff;
-    height: 5px;
-}
 
 li{
    padding-bottom:15px;

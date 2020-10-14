@@ -1,24 +1,31 @@
-
-.projectscontents .section-title {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 50px 0 0px;
-}
-.projectsbanner{
-height:210px;
-display:block;
-background-size:cover;
-position:relative;
-}
 .projectsbanner-info{
 position:absolute;
-top:40%;
-left:8%;
+top:45%;
+left:6%;
+}
+.mainnav{
+ position:absolute;
+ top:0.3%;
+ left:9%;
+ }
+.navbar-dark .navbar-nav .nav-link{
+color:white;
+}
+@media (max-width:800px) {
+   .mainnav .navbar-nav {
+      background-color:white;
+      z-index:1;
+      display:block;
+      text-align:center;
+      padding:15px 0;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+    color:#007bff;
+    }
 }
 .motto{
 color:white;
-font-size:25px;
+font-size:2vw;
 font-weight:600;
 text-transform: uppercase;
 }
@@ -32,6 +39,13 @@ text-transform: uppercase;
 #mainnav .nav-link:hover {
 background-color:#c3c2c7;
 }
+.projectscontents .section-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 0px;
+}
+
 .search{
     width:100%;
     padding-left:20px;
@@ -39,10 +53,9 @@ background-color:#c3c2c7;
 .searchname{
    float:left;
    color:green;
-
+}
 .searchname p{
 color:black;
-}
 }
 .clean-searchbox{
     margin-bottom: 20px;
@@ -51,7 +64,6 @@ color:black;
 #searchbox {
 border:1px solid #a3adb7;
 padding: 3px 30px 3px 20px;
-background-color:#f6e5ff;
 color:#5e5f60;
 font-family: "Times New Roman", Times, serif;
 font-size:16px;
@@ -162,4 +174,13 @@ color:#fff;
 }
 .showNothing span{
     color:red;
+}
+
+@media (max-width:400px){
+   .projectsbanner-info{
+       display:none;
+   }
+   .clean-searchbox{
+      display:none;
+   }
 }

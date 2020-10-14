@@ -1,25 +1,52 @@
-.banner{
-height:500px;
-display:block;
-background: url(../img/photo2.png) no-repeat;
-background-size:1110px 500px;
+
+ header{
+ position:absolute;
+ top:0.3%;
+ }
+.navbar-light .navbar-nav .nav-link{
+color:#007bff;
+font-size:16px;
 }
-.banner-info{
-padding:8em 0em;
+.navbar-light .navbar-nav a:hover,
+.navbar-light .navbar-nav a:focus{
+background-color:white;
+border-radius: 4px;
 }
+ @media (max-width:800px) {
+   .navbar-nav {
+     background-color:white;
+     z-index:1;
+     display:block;
+     text-align:center;
+     padding:15px 0;
+   }
+ }
+ .banner-content{
+ top:40%;
+ left:3%;
+ z-index:0;
+ }
 h2.heading-banner{
 color:#fff;
-font-size:30px;
+font-size:3vw;
 font-weight: 300;
 }
 h2.heading-banner span {
-    font-weight: 600;
-    color:#ffae00;
+font-weight: 600;
+color:#ffae00;
+}
+.row{
+border:none;
+}
+.card{
+border:none;
+}
+.title{
+font-weight:700;
 }
 .banner-info p{
 color:#fff;
-max-width:550px;
-font-size:30px;
+font-size:3vw;
 font-weight: 300;
 }
 p.banner-para span{
@@ -29,78 +56,29 @@ font-weight: 600;
 a.banner-button{
 border:2px solid #fff;
 color:#fff;
-font-size: 15px;
+font-size: 2vw;
 letter-spacing: 1px;
-padding: 10px 25px;
+padding: 1vw 2vw;
 }
-.banner-bottom, .banner{
-    padding: 2em 3em;
+a.banner-button:hover{
+background-color:#ffae00;
+border:none;
+}
+#about a{
+background-color:#ffae00;
+padding:0.5vw 1vw;
+border:none;
+}
+#about a:hover{
+background-color:blue;
+color:#fff;
 }
 h2.heading{
 font-size: 36px;
 color: #000;
 font-weight: 100;
 }
-.advantage_left h4 {
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-a.banner-button1 {
-    background: #00BCD4;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 10px 23px;
-}
-a.banner-button2 {
-    background: #3369e7;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 10px 23px;
-}
-.section-title{
-display: block;
-width: 100%;
-text-align: center;
-margin-bottom:60px;
-}
-.section-title h2{
-    color: #ffae00;
-    font-size: 35px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 20px 0;
-}
-.advantage-left h2{
-  color: #ffae00;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 50px;
-}
-.advantage-right h2{
-  color: #ffae00;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 50px;
-}
-.info-list{
-    display: :inline-block;
-}
-.info-list li{
-    padding-bottom:20px;
-}
-.info-list li .title{
-    display:inline-block;
-    width:150px;
-    font-weight:500;
 
-}
-.info-list li .value{
-
+.section{
+padding:70px 0;
 }

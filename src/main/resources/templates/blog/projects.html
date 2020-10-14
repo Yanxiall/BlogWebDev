@@ -4,11 +4,14 @@
 <link rel="stylesheet" th:href="@{/blog/css/projects.css}"/>
 <body>
 <!--banner-->
-<div class="projectsbanner" th:style="'background:url(' + @{/blog/img/banner.png} + ') no-repeat;'">
-    <header th:replace="blog/header::nav-fragment"></header>
+<div class="projectsbanner position-relative">
+    <div class="container mainnav">
+        <header th:replace="blog/header::nav-fragment"></header>
+    </div>
+    <img th:src="@{/blog/img/banner.png}" class="img-fluid">
     <div class="projectsbanner-info">
-            <h2 class="motto">stay hungry</h2>
-            <h2 class="motto">stay foolish</h2>
+        <h2 class="motto">stay hungry</h2>
+        <h2 class="motto">stay foolish</h2>
     </div>
 </div>
 <div class="container">
@@ -16,16 +19,20 @@
     <div class="main">
         <section class="projectscontents">
             <div class="row">
-                <div class="section-title">
-                    <h2>Projects</h2><!-- section title -->
+                <div class="title col-lg-8 mt-3 mb-3 text-center">
+                   <div class="section-title">
+                      <h2>Projects</h2><!-- section title -->
+                   </div>
                 </div>
-                <div class="clean-searchbox">
+                <div class="search col-lg-4 mt-4 mb-3 text-right">
+                  <div class="clean-searchbox">
                     <form  method="get" onsubmit="return false;" accept-charset="utf-8">
                         <input class="searchfield" id="searchbox" type="text" placeholder="Please enter your keyword">
                         <button class="searchbutton" id="searchbutton" onclick="search()">
                             <i class="fa fa-search"></i>
                         </button>
                     </form>
+                  </div>
                 </div>
                 <div class="col-md-8 blog-main">
                     <div class="row">
@@ -58,37 +65,7 @@
                                 </th:block>
                             </th:block>
                         </th:block>
-                        <th:block th:if="${null != blogPageResult}">
-                            <ul class="blog-pagination">
-                                <li th:class="${blogPageResult.currPage==1}?'disabled' : ''"><a
-                                        th:href="@{${blogPageResult.currPage==1}?'##':'/page/' + ${blogPageResult.currPage-1}}">&laquo;</a>
-                                </li>
-                                <li th:if="${blogPageResult.currPage-3 >=1}"><a
-                                        th:href="@{'/page/' + ${blogPageResult.currPage-3}}"
-                                        th:text="${blogPageResult.currPage -3}">1</a></li>
-                                <li th:if="${blogPageResult.currPage-2 >=1}"><a
-                                        th:href="@{'/page/' + ${blogPageResult.currPage-2}}"
-                                        th:text="${blogPageResult.currPage -2}">1</a></li>
-                                <li th:if="${blogPageResult.currPage-1 >=1}"><a
-                                        th:href="@{'/page/' + ${blogPageResult.currPage-1}}"
-                                        th:text="${blogPageResult.currPage -1}">1</a></li>
-                                <li class="active"><a href="#" th:text="${blogPageResult.currPage}">1</a></li>
-                                <li th:if="${blogPageResult.currPage+1 <=blogPageResult.totalPage}"><a
-                                        th:href="@{'/page/' + ${blogPageResult.currPage+1}}"
-                                        th:text="${blogPageResult.currPage +1}">1</a></li>
-                                <li th:if="${blogPageResult.currPage+2 <=blogPageResult.totalPage}"><a
-                                        th:href="@{'/page/' + ${blogPageResult.currPage+2}}"
-                                        th:text="${blogPageResult.currPage +2}">1</a></li>
-                                <li th:if="${blogPageResult.currPage+3 <=blogPageResult.totalPage}"><a
-                                        th:href="@{'/page/' + ${blogPageResult.currPage+3}}"
-                                        th:text="${blogPageResult.currPage +3}">1</a></li>
-                                <li th:class="${blogPageResult.currPage==blogPageResult.totalPage}?'disabled' : ''"><a
-                                        th:href="@{${blogPageResult.currPage==blogPageResult.totalPage}?'##' : '/page/' + ${blogPageResult.currPage+1}}">&raquo;</a>
-                                </li>
-                            </ul>
-                        </th:block>
                     </div>
-
                 </div>
                 <aside class="col-md-4 blog-aside">
                     <div class="aside-widget">
@@ -109,19 +86,42 @@
                         </div>
                     </div>
                 </aside>
+                <div class="col-12 page">
+                    <th:block th:if="${null != blogPageResult}">
+                        <ul class="blog-pagination">
+                            <li th:class="${blogPageResult.currPage==1}?'disabled' : ''"><a
+                                    th:href="@{${blogPageResult.currPage==1}?'##':'/page/' + ${blogPageResult.currPage-1}}">&laquo;</a>
+                            </li>
+                            <li th:if="${blogPageResult.currPage-3 >=1}"><a
+                                    th:href="@{'/page/' + ${blogPageResult.currPage-3}}"
+                                    th:text="${blogPageResult.currPage -3}">1</a></li>
+                            <li th:if="${blogPageResult.currPage-2 >=1}"><a
+                                    th:href="@{'/page/' + ${blogPageResult.currPage-2}}"
+                                    th:text="${blogPageResult.currPage -2}">1</a></li>
+                            <li th:if="${blogPageResult.currPage-1 >=1}"><a
+                                    th:href="@{'/page/' + ${blogPageResult.currPage-1}}"
+                                    th:text="${blogPageResult.currPage -1}">1</a></li>
+                            <li class="active"><a href="#" th:text="${blogPageResult.currPage}">1</a></li>
+                            <li th:if="${blogPageResult.currPage+1 <=blogPageResult.totalPage}"><a
+                                    th:href="@{'/page/' + ${blogPageResult.currPage+1}}"
+                                    th:text="${blogPageResult.currPage +1}">1</a></li>
+                            <li th:if="${blogPageResult.currPage+2 <=blogPageResult.totalPage}"><a
+                                    th:href="@{'/page/' + ${blogPageResult.currPage+2}}"
+                                    th:text="${blogPageResult.currPage +2}">1</a></li>
+                            <li th:if="${blogPageResult.currPage+3 <=blogPageResult.totalPage}"><a
+                                    th:href="@{'/page/' + ${blogPageResult.currPage+3}}"
+                                    th:text="${blogPageResult.currPage +3}">1</a></li>
+                            <li th:class="${blogPageResult.currPage==blogPageResult.totalPage}?'disabled' : ''"><a
+                                    th:href="@{${blogPageResult.currPage==blogPageResult.totalPage}?'##' : '/page/' + ${blogPageResult.currPage+1}}">&raquo;</a>
+                            </li>
+                        </ul>
+                    </th:block>
+                </div>
             </div>
         </section>
-    </div>
+     </div>
 </div>
 <div th:replace="blog/footer::footer-fragment"></div>
-<!-- jQuery -->
-<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
-<!-- Bootstrap 4 -->
-<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
-<!--common-->
-<script th:src="@{/blog/js/common.js}"></script>
 <script th:src="@{/blog/js/project.js}"></script>
-<!--<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
-<script src="https://kit.fontawesome.com/684fe6b1fc.js" crossorigin="anonymous"></script>
 </body>
 </html>

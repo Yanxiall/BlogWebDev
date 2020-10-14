@@ -4,78 +4,139 @@
 <!-- Styles -->
 <link rel="stylesheet" th:href="@{/blog/css/index.css}" />
 <body>
-<header th:replace="blog/header::nav-fragment"></header>
-<div class="container">
-    <!--main-->
-    <div class="main">
-        <!--banner-->
-        <section class="banner">
-            <div class="col-md-12">
-                <div class="banner-info">
-                    <h2 class="heading-banner text-capitalize">
-                        Hello, I'm
-                        <span>Yanxia He</span>
-                    </h2>
-                    <p class="banner-para mt-3">
-                        A
-                       <span>Full Stack</span>
-                        developer
-                    </p>
-                    <a th:href="@{/resume}" class="banner-button btn mt-3 mt-md-5">See Resume</a>
-                </div>
+<div class="banner position-relative">
+    <header th:replace="blog/header::nav-fragment"></header>
+    <img th:src="@{/blog/img/photo2.png}" width="100%">
+    <div class="banner-content position-absolute">
+        <div class="col-md-12">
+            <div class="banner-info">
+                <h2 class="heading-banner text-capitalize">
+                    Hello, I'm
+                    <span>Yanxia He</span>
+                </h2>
+                <p class="banner-para mt-md-3">
+                    A
+                    <span>Full Stack</span>
+                    developer
+                </p>
+                <a th:href="@{/resume}" class="banner-button btn mt-3 mt-md-5">See Resume</a>
             </div>
-        </section>
-        <!--//banner-->
-        <!--about me-->
-        <section id="about" class="banner-bottom">
-         <div class="inner-sec">
-             <div class="row middle-grids">
-                 <div class="section-title">
-                     <h2>ABOUT ME</h2><!-- section title -->
-                 </div>
-                 <!--Brief Introduction-->
-                 <div class="col-lg-6 advantage-grid-info1">
-                     <article class="advantage-left">
-                         <h2 class="heading text-capitalize mb-4">
-                             Brief Introduction
-                         </h2>
-                         <h4>I'm a Professional Web Designer </h4>
-                         <p class="mb-4">I come from china. I studied elekctrotechnik. I like web design</p>
-                         <a th:href="@{/contact}" class="banner-button2 btn">Hire Me</a>
-                     </article>
-                 </div>
-                 <!--//Brief Introduction-->
-                 <!--My skils-->
-                 <div class="col-lg-6 advantage-grid-info2">
-                     <div class="advantage-right">
-                         <h2 class="heading text-capitalize mb-4">
-                             Basic Information
-                         </h2>
-                         <ul class="info-list">
-                             <li><span class="title">E-mail</span><span class="value"><a href="#">yanxia_he@126.com</a></span></li>
-                             <li><span class="title">Phone</span><span class="value">+015756213316</span></li>
-                             <li><span class="title">Address</span><span class="value">Mühlstraße 11,71229 Leonberg</span></li>
-                             <li><span class="title">Date of Birth</span><span class="value">29</span></li>
-                             <li><span class="title">Nationality</span><span class="value">China</span></li>
-                         </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <!--//banner-->
+  <div id="about" class="section">
+      <div class="container">
+          <div class="card shadow bg-white rounded">
+            <div class="row middle-grids">
+                 <!--About me-->
+                 <div class="col-lg-6 col-md-12">
+                         <div class="card-body">
+                             <div class="h4 mt-0 title">About Me</div>
+                             <p class="card-text">
+                                 I come from china. I studied elekctrotechnik. I like web design. Technology has revolutionized our culture and anything and everything around us is a factor of design.
+                                 I am a one-man creative army devoted to helping brands.Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.
+                                 Creative CV is a HTML resume template for professionals.
+                             </p>
+                             <a th:href="@{/contact}" class="btn btn-primary mt-2">Hire Me</a>
+                         </div>
+                     </div>
+                 <!--//about me-->
+                 <!--Basic Information-->
+                 <div class="col-lg-6 col-md-12">
+                     <div class="card-body">
+                         <div class="h4 mt-0 title">Basic Information</div>
+                         <div class="row">
+                             <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                             <div class="col-sm-8">yanxia_he@126.com</div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+                             <div class="col-sm-8">015756213316</div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+                             <div class="col-sm-8">Leonberg,Baden-Württemberg</div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4"><strong class="text-uppercase">Nationality:</strong></div>
+                             <div class="col-sm-8">China</div>
+                         </div>
+                         <div class="row">
+                             <div class="col-sm-4"><strong class="text-uppercase">Date of Birth:</strong></div>
+                             <div class="col-sm-8">02.03.1991</div>
+                         </div>
                      </div>
                  </div>
-                 <!--//My skils-->
+            </div>
+          </div>
+      </div>
+  </div>
+  <div id="skills" class="section">
+    <!--My skils-->
+    <div class="container">
+      <div class="h2 text-center mb-4 title">Professional Skills</div>
+      <div class="card shadow-lg bg-white rounded">
+          <div class="card-body">
+            <div class="row pt-0">
+              <div class="skill-list col-md-6">
+                  <p class="mb-2">HTML/CSS - 90%</p>
+                  <div class="progress mb-3" style="height:5px;">
+                      <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="HTML" style="width:0%">
+                      </div>
+                  </div>
+                  <p class="mb-2">Javascript-30%</p>
+                  <div class="progress mb-3" style="height:5px;">
+                      <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="Javascript" style="width:0%">
+                      </div>
+                  </div>
+                  <p class="mb-2">Bootstrap4-80%</p>
+                  <div class="progress mb-3" style="height:5px;">
+                      <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="Bootstrap" style="width:0%">
+                      </div>
+                  </div>
+                  <p class="mb-2">Java-50%</p>
+                  <div class="progress mb-3" style="height:5px;">
+                      <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="Java" style="width:0%">
+                      </div>
+                  </div>
+            </div>
+             <div class="skill-list col-md-6">
+                 <p class="mb-2">C++-70%</p>
+                 <div class="progress mb-3" style="height:5px;">
+                     <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="Cplus" style="width:0%">
+                     </div>
+                 </div>
+                 <p class="mb-2">python-60%</p>
+                 <div class="progress mb-3" style="height:5px;">
+                     <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="python" style="width:0%">
+                     </div>
+                 </div>
+                 <p class="mb-2">MySQL-70%</p>
+                 <div class="progress mb-3" style="height:5px;">
+                     <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="MySQL" style="width:0%">
+                     </div>
+                 </div>
+                 <p class="mb-2">BigData-30%</p>
+                 <div class="progress mb-3" style="height:5px;">
+                     <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="BigData" style="width:0%">
+                     </div>
+                 </div>
              </div>
-         </div>
-        </section>
-        <!--//about me-->
+        </div>
+
+      </div>
     </div>
-    <!--//main-->
+    <!--//My skils-->
+    </div>
+  </div>
 </div>
-<div th:replace="blog/footer::footer-fragment"></div>
-<!-- jQuery -->
-<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
-<!-- Bootstrap 4 -->
-<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+  <!--footer-->
+  <div th:replace="blog/footer::footer-fragment"></div>
+  <!--//footer-->
 <!--common-->
 <script th:src="@{/blog/js/common.js}"></script>
-<!--<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
-<script src="https://kit.fontawesome.com/684fe6b1fc.js" crossorigin="anonymous"></script>
+<script th:src="@{/blog/js/index.js}"></script>
 </body>
 </html>

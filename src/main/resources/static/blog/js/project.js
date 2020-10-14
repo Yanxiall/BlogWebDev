@@ -1,3 +1,16 @@
+$('.navbar').removeClass('navbar-light');
+$('.navbar').addClass('navbar-dark');
+$(window).scroll(function(){
+      var scrollTop = $(this).scrollTop();
+      console.log(scrollTop);
+      if(scrollTop>50){
+         $('.navbar').addClass('bg-primary');
+      }
+      else{
+         $('.navbar').removeClass('bg-primary');
+      }
+})
+
 //press search button to search
 function search(){
    var keyword = $("#searchbox").val();

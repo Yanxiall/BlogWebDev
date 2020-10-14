@@ -4,8 +4,11 @@
 <link rel="stylesheet" th:href="@{/blog/css/search.css}"/>
 <body>
 <!--banner-->
-<div class="projectsbanner" th:style="'background:url(' + @{/blog/img/banner.png} + ') no-repeat;'">
-    <header th:replace="blog/header::nav-fragment"></header>
+<div class="projectsbanner position-relative">
+    <div class="container mainnav">
+        <header th:replace="blog/header::nav-fragment"></header>
+    </div>
+    <img th:src="@{/blog/img/banner.png}" class="img-fluid">
     <div class="projectsbanner-info">
         <h2 class="motto">stay hungry</h2>
         <h2 class="motto">stay foolish</h2>
@@ -16,9 +19,11 @@
     <div class="main">
         <section class="projectscontents">
             <div class="row">
-                <div class="section-title">
-                    <h2>Projects</h2><!-- section title -->
+                <!-- section title -->
+                <div class="section-title mt-3 mb-3 text-center">
+                    <h2>Projects</h2>
                 </div>
+                <!-- //section title -->
                 <div class="search">
                     <div class="searchname">
                         <p><span class="font-weight-bold" th:text="@{${pageName} + ':'}">&nbsp;</span><span th:text="${keyword}"></span></p>
@@ -102,14 +107,8 @@
     </div>
 </div>
 <div th:replace="blog/footer::footer-fragment"></div>
-<!-- jQuery -->
-<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
-<!-- Bootstrap 4 -->
-<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
 <!--common-->
 <script th:src="@{/blog/js/common.js}"></script>
 <script th:src="@{/blog/js/project.js}"></script>
-<!--<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
-<script src="https://kit.fontawesome.com/684fe6b1fc.js" crossorigin="anonymous"></script>
 </body>
 </html>
