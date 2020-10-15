@@ -3,37 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0685d116-3573-4959-bed8-a1096daa8e3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/projects.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/resume.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/resume.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/js/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/js/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/js/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/js/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/blogdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/blogdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/img/indexbanner.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/projects.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/resume.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/resume.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/js/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/js/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blog/js/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog/js/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/blogdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/blogdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -218,8 +218,8 @@ border-style:hidden;
 	width: 100%;
 	border: #fbfbfb solid 4px;
 	cursor:pointer;
-	background-color: #3498db;
-	color:white;
+	background-color:rgba(0,0,0,0);
+	color:#0493bd;
 	font-size:24px;
 	padding-top:5px;
 	padding-bottom:5px;
@@ -229,8 +229,8 @@ border-style:hidden;
 }
 
 .button-blue:hover{
-	background-color: rgba(0,0,0,0);
-	color: #0493bd;
+	background-color:  #3498db;
+	color: white;
 }
 
 .montform  .submit:hover {
