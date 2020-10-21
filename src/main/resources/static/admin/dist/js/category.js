@@ -5,10 +5,10 @@ $(function () {
         datatype: "json",
         //the columns which shows in the website
         colModel: [
-            {label: 'categoryId', name: 'categoryId', index: 'categoryId', width: 50, hidden: true, key: true},
-            {label: 'categoryName', name: 'categoryName', index: 'categoryName', sortable: false, width: 50},
-            {label: 'categoryIcon', name: 'categoryIcon', index: 'categoryIcon', sortable: false, width: 50,formatter:imgFormatter},
-            {label: 'createTime', name: 'createTime', index: 'createTime', sortable: false, width: 60}
+            {label: 'categoryId', name: 'categoryId', index: 'categoryId', hidden: true, key: true},
+            {label: 'categoryName', name: 'categoryName', index: 'categoryName', sortable: false},
+            {label: 'categoryIcon', name: 'categoryIcon', index: 'categoryIcon', sortable: false, formatter:imgFormatter},
+            {label: 'createTime', name: 'createTime', index: 'createTime', sortable: false}
         ],
         height: 485,
         rowNum: 5,
@@ -34,14 +34,15 @@ $(function () {
             order: "order"
         },
     });
-    $(window).resize(function () {
-        $("#jqGrid").setGridWidth($(".card-body").width());
-    });
-    $("#ChangeIcon").click(function(){
+
+          $(window).resize(function () {
+            $('#jqGrid').setGridWidth($('.card-body').width());
+          });
+});
+ $("#ChangeIcon").click(function(){
       var rand = parseInt(Math.random() * 20 + 1);
       $("#categoryIconImg").attr("src", '/admin/dist/img/category/' + rand + ".png");
       $("#CategoryIcon").val('/admin/dist/img/category/' + rand + ".png")
-    });
 });
 //Add category
 function CategoryAdd(){

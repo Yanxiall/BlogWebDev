@@ -16,7 +16,6 @@ $(function () {
     });
   $(".select2").select2();
   $('#BlogTag').tagsInput({
-  width: "100%",
   height: "38px",
   defaultText: "BlogTag",
 });

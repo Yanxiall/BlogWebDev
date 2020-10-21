@@ -12,19 +12,19 @@ public class KaptchaConfig {
     public DefaultKaptcha getDefaultKaptcha(){
         com.google.code.kaptcha.impl.DefaultKaptcha defaultKaptcha = new com.google.code.kaptcha.impl.DefaultKaptcha();
         Properties properties = new Properties();
-        // 图片边框
+        // image framework
         properties.put("kaptcha.border", "no");
-        // 字体颜色
+        // captcha color
         properties.put("kaptcha.textproducer.font.color", "black");
-        // 图片宽
+        // image width
         properties.put("kaptcha.image.width", "160");
-        // 图片高
+        // image length
         properties.put("kaptcha.image.height", "40");
-        // 字体大小
+        // font size
         properties.put("kaptcha.textproducer.font.size", "30");
-        // 验证码长度
+        // captcha length
         properties.put("kaptcha.textproducer.char.space", "5");
-        // 字体
+        // font family
         properties.setProperty("kaptcha.textproducer.font.names", "宋体,楷体,微软雅黑");
         Config config = new Config(properties);
         defaultKaptcha.setConfig(config);

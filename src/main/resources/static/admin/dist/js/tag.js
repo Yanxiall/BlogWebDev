@@ -33,9 +33,9 @@ $(function () {
             order: "order"
         },
     });
-    $(window).resize(function () {
-        $("#jqGrid").setGridWidth($(".card-body").width());
-    });
+     $(window).resize(function () {
+            $("#jqGrid").setGridWidth($(".card-body").width());
+        });
 });
 function TagAdd(){
  reset();

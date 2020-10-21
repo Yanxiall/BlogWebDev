@@ -36,6 +36,7 @@ $(function () {
             rows: "limit",
             order: "order"
         },
+
     });
     $(window).resize(function () {
         $("#jqGrid").setGridWidth($(".card-body").width());

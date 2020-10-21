@@ -13,6 +13,7 @@ public interface AdminUserMapper {
     int insertSelective(AdminUser record);
 
     AdminUser selectByPrimaryKey(Integer adminUserId);
+
     AdminUser search(@Param("username") String username, @Param("password") String password);
 
     int updateByPrimaryKeySelective(AdminUser record);
