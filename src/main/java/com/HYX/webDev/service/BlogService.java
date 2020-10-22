@@ -7,6 +7,7 @@ import com.HYX.webDev.util.PageUtil;
 
 public interface BlogService {
     public String saveBlog(Blog blog);
+    public String updateBlog(Blog blog);
     PageResult getBlogPage(PageUtil pageUtil);
     public Boolean DeleteBlogBatch(Long[] ids);
     PageResult getBlogsForIndexPage(int page);

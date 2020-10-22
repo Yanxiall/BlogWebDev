@@ -48,9 +48,9 @@ public class BlogServiceImpl implements BlogService {
             blog.setBlogCategoryName(CategoryName);
         }
         String[] blogtags = blog.getBlogTags().split(",");
-        if(blogtags.length > 6)
+        if(blogtags.length > 20)
         {
-            return "the number of tags can not be more than 6!";
+            return "the number of tags can not be more than 20!";
         }
         //insert blog
         if(blogMapper.insertSelective(blog) > 0){
@@ -223,7 +223,7 @@ public class BlogServiceImpl implements BlogService {
             if (blogCategory == null) {
                 blogCategory = new BlogCategory();
                 blogCategory.setCategoryId(0);
-                blogCategory.setCategoryName("默认分类");
+                blogCategory.setCategoryName("default category");
                 blogCategory.setCategoryIcon("/admin/dist/img/category/00.png");
             }
             //get category Icon
@@ -236,6 +236,67 @@ public class BlogServiceImpl implements BlogService {
             return blogDetailVO;
         }
         return null;
+
+    }
+    @Override
+    @Transactional
+    public String updateBlog(Blog blog){
+        Blog blogForUpdate = blogMapper.selectByPrimaryKey(blog.getBlogId());
+        if (blogForUpdate == null) {
+            return "blog exists not";
+        }
+        blogForUpdate.setBlogTitle(blog.getBlogTitle());
+        blogForUpdate.setBlogSubUrl(blog.getBlogSubUrl());
+        blogForUpdate.setBlogContent(blog.getBlogContent());
+        blogForUpdate.setBlogCoverImage(blog.getBlogCoverImage());
+        blogForUpdate.setBlogStatus(blog.getBlogStatus());
+        BlogCategory blogCategory = blogCategoryMapper.selectByPrimaryKey(blog.getBlogCategoryId());
+        if (blogCategory == null) {
+            blogForUpdate.setBlogCategoryId(0);
+            blogForUpdate.setBlogCategoryName("defalult category");
+        } else {
+            //set category name
+            blogForUpdate.setBlogCategoryName(blogCategory.getCategoryName());
+            blogForUpdate.setBlogCategoryId(blogCategory.getCategoryId());
+        }
+        //process tags
+        String[] tags = blog.getBlogTags().split(",");
+        if (tags.length > 20) {
+            return "the number of tags can not be more than 20!";
+        }
+        blogForUpdate.setBlogTags(blog.getBlogTags());
+        //new tags
+        List<BlogTag> tagListForInsert = new ArrayList<>();
+        //create relation
+        List<BlogTag> allTagsList = new ArrayList<>();
+        for (int i = 0; i < tags.length; i++) {
+            BlogTag tag = blogTagMapper.selectByTagName(tags[i]);
+            if (tag == null) {
+                BlogTag tempTag = new BlogTag();
+                tempTag.setTagName(tags[i]);
+                tagListForInsert.add(tempTag);
+            } else {
+                allTagsList.add(tag);
+            }
+        }
+        if (!CollectionUtils.isEmpty(tagListForInsert)) {
+            blogTagMapper.InsertBatch(tagListForInsert);
+        }
+        List<BlogTagRelation> blogTagRelations = new ArrayList<>();
+        allTagsList.addAll(tagListForInsert);
+        for (BlogTag tag : allTagsList) {
+            BlogTagRelation blogTagRelation = new BlogTagRelation();
+            blogTagRelation.setBlogId(blog.getBlogId());
+            blogTagRelation.setTagId(tag.getTagId());
+            blogTagRelations.add(blogTagRelation);
+        }
+        blogCategoryMapper.updateByPrimaryKeySelective(blogCategory);
+        blogTagRelationMapper.delteByBlogId(blog.getBlogId());
+        blogTagRelationMapper.insertBatch(blogTagRelations);
+        if (blogMapper.updateByPrimaryKeySelective(blogForUpdate) > 0) {
+            return "success";
+        }
+        return "modify fail";
 
     }
 }

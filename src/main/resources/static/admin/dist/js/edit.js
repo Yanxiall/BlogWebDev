@@ -59,6 +59,7 @@ $(function () {
                   }
    });
    $("#SaveBlogButton").click(function(){
+        var blogId = $('#blogId').val();
         var BlogTitle = $("#BlogTitle").val();
         var BlogTag = $("#BlogTag").val();
         var BlogSuburl = $("#BlogSuburl").val();
@@ -66,22 +67,31 @@ $(function () {
         var blogContent = blogEditor.getMarkdown();
         var RandomCoverImg = $("#RandomCoverImg")[0].src;
         var PostStatus = $("input[name='PostStatus']:checked").val();
-        var EnableComment =  $("input[name='EnableComment']:checked").val();
+        var url = "/admin/edit/save";
+        var swlMessage = "save success";
         var data = {
         "BlogTitle":BlogTitle,"BlogTag":BlogTag,"BlogSuburl":BlogSuburl,"blogCategoryId":blogCategoryId,
-        "blogContent":blogContent,"RandomCoverImg":RandomCoverImg,"PostStatus":PostStatus,"EnableComment":EnableComment
+        "blogContent":blogContent,"RandomCoverImg":RandomCoverImg,"PostStatus":PostStatus
         };
+        if(blogId > 0){
+          url = "/admin/blogs/update";
+          swlMessage = "modify success";
+          var data = {
+                  "blogId":blogId, "BlogTitle":BlogTitle,"BlogTag":BlogTag,"BlogSuburl":BlogSuburl,"blogCategoryId":blogCategoryId,
+                  "blogContent":blogContent,"RandomCoverImg":RandomCoverImg,"PostStatus":PostStatus
+                  };
+        }
         $.ajax
                  ({
                      type: "POST",
-                     url: "/admin/edit/save",
+                     url: url,
                      data:data,
                      dataType:"json",
                      success: function(result)
                      {
                         if(result.resultCode == 200)
                         {
-                        swal("save success", {
+                        swal(swlMessage, {
                                icon: "success"
                                  }).then(function () {
                                window.location.href = "/admin/blog";

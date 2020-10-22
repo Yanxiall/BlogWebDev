@@ -10,6 +10,8 @@ public interface BlogTagRelationMapper {
 
     int delteByBlogIds(Long[] ids);
 
+    int delteByBlogId(Long id);
+
     int insert(BlogTagRelation record);
 
     int insertSelective(BlogTagRelation record);

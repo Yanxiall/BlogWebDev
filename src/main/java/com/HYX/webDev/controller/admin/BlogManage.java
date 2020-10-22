@@ -56,8 +56,7 @@ public class BlogManage {
     }
     @RequestMapping(value ="/blog/edit/{blogId}", method = RequestMethod.GET)
     public String modify(HttpServletRequest request,@PathVariable("blogId") Long blogId){
-        Blog blog = new Blog();
-        blog = blogMapper.selectByPrimaryKey(blogId);
+        Blog blog = blogMapper.selectByPrimaryKey(blogId);
         request.setAttribute("blog",blog);
         request.setAttribute("categories",blogCategoryService.getAllCategories());
         return "admin/edit";

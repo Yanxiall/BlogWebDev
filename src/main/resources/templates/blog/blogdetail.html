@@ -22,14 +22,14 @@
                                     th:src="@{${blogDetailVo.blogCategoryIcon}}"
                                     style=" margin-top: -4px;height: 16px;width: 16px;"
                                     alt="my personal blog"/>
-                            <a th:href="@{'/blog/category/' + ${blogDetailVo.blogCategoryName}}">&nbsp;<th:block th:text="${blogDetailVo.blogCategoryName}">
+                            <a th:href="@{'/category/' + ${blogDetailVo.blogCategoryName}}">&nbsp;<th:block th:text="${blogDetailVo.blogCategoryName}">
                             </th:block>
                             </a>
                         </div>
                         <div class="meta">
                             <p class="post-tags">
                                 <th:block th:each="tag : ${blogDetailVo.blogTags}">
-                                    <a th:href="@{'/blog/tag/' + ${tag}}">
+                                    <a th:href="@{'/tag/' + ${tag}}">
                                         <th:block th:text="${tag}"></th:block>
                                     </a>
                                 </th:block>

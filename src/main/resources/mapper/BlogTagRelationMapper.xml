@@ -44,6 +44,10 @@
       #{id}
     </foreach>
   </delete>
+  <delete id="delteByBlogId" parameterType="java.lang.Long">
+    delete from tb_blog_tag_relation
+    where blog_id = #{blogId,jdbcType=BIGINT}
+  </delete>
   <insert id="insert" parameterType="com.HYX.webDev.entity.BlogTagRelation">
     insert into tb_blog_tag_relation (relation_id, blog_id, tag_id, 
       create_time)

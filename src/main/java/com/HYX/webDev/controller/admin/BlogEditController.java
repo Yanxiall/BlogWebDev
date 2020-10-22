@@ -41,12 +41,62 @@ public class BlogEditController {
     @ResponseBody
     public Result save(@RequestParam(name="BlogTitle") String BlogTitle,
                        @RequestParam(name="BlogTag")  String BlogTag ,
-                       @RequestParam(name="BlogSuburl")  String BlogSuburl,
+                       @RequestParam(name="BlogSuburl",required = false)  String BlogSuburl,
                        @RequestParam(name="blogCategoryId") Integer blogCategoryId,
                        @RequestParam(name="blogContent") String blogContent,
                        @RequestParam(name="RandomCoverImg") String CoverImg,
-                       @RequestParam(name="PostStatus") Byte PostStatus,
-                       @RequestParam(name="EnableComment") Byte EnableComment)
+                       @RequestParam(name="PostStatus") Byte PostStatus)
+    {
+        System.out.println(BlogSuburl);
+        if(StringUtils.isEmpty(BlogTitle))
+        {
+            return ResultGenerator.genFailResult("Please input Blog Title!");
+        }
+        if (BlogTitle.trim().length() > 150) {
+            return ResultGenerator.genFailResult("Blog Title is too long");
+        }
+        if(StringUtils.isEmpty(BlogTag))
+        {
+            return ResultGenerator.genFailResult("Please input Blog Tag!");
+        }
+        if (BlogTag.trim().length() > 150) {
+            return ResultGenerator.genFailResult("Blog Tag is too long");
+        }
+        if(StringUtils.isEmpty(blogContent))
+        {
+            return ResultGenerator.genFailResult("Please input blog content!");
+        }
+        if(StringUtils.isEmpty(CoverImg))
+        {
+            return ResultGenerator.genFailResult("Please upload cover image!");
+        }
+        Blog blog = new Blog();
+        blog.setBlogTitle(BlogTitle);
+        blog.setBlogTags(BlogTag);
+        blog.setBlogSubUrl(BlogSuburl);
+        blog.setBlogCategoryId(blogCategoryId);
+        blog.setBlogContent(blogContent);
+        blog.setBlogCoverImage(CoverImg);
+        blog.setBlogStatus(PostStatus);
+        String saveResult = blogService.saveBlog(blog);
+        if("success".equals(saveResult)){
+            return ResultGenerator.genSuccessResult("save success!");
+        }
+        else{
+            return ResultGenerator.genFailResult(saveResult);
+        }
+    }
+    @PostMapping("/blogs/update")
+    @ResponseBody
+    public Result update(
+                       @RequestParam(name="blogId") Long blogId,
+                       @RequestParam(name="BlogTitle") String BlogTitle,
+                       @RequestParam(name="BlogTag")  String BlogTag ,
+                       @RequestParam(name="BlogSuburl",required = false)  String BlogSuburl,
+                       @RequestParam(name="blogCategoryId") Integer blogCategoryId,
+                       @RequestParam(name="blogContent") String blogContent,
+                       @RequestParam(name="RandomCoverImg") String CoverImg,
+                       @RequestParam(name="PostStatus") Byte PostStatus)
     {
         if(StringUtils.isEmpty(BlogTitle))
         {
@@ -62,10 +112,6 @@ public class BlogEditController {
         if (BlogTag.trim().length() > 150) {
             return ResultGenerator.genFailResult("Blog Tag is too long");
         }
-        if(StringUtils.isEmpty(BlogSuburl))
-        {
-            return ResultGenerator.genFailResult("Please input custom path!");
-        }
         if(StringUtils.isEmpty(blogContent))
         {
             return ResultGenerator.genFailResult("Please input blog content!");
@@ -74,8 +120,8 @@ public class BlogEditController {
         {
             return ResultGenerator.genFailResult("Please upload cover image!");
         }
-        System.out.println("coverimage"+CoverImg);
         Blog blog = new Blog();
+        blog.setBlogId(blogId);
         blog.setBlogTitle(BlogTitle);
         blog.setBlogTags(BlogTag);
         blog.setBlogSubUrl(BlogSuburl);
@@ -83,13 +129,11 @@ public class BlogEditController {
         blog.setBlogContent(blogContent);
         blog.setBlogCoverImage(CoverImg);
         blog.setBlogStatus(PostStatus);
-        blog.setEnableComment(EnableComment);
-        String saveResult = blogService.saveBlog(blog);
-        if("success".equals(saveResult)){
-            return ResultGenerator.genSuccessResult("save success!");
-        }
-        else{
-            return ResultGenerator.genFailResult(saveResult);
+        String updateBlogResult = blogService.updateBlog(blog);
+        if ("success".equals(updateBlogResult)) {
+            return ResultGenerator.genSuccessResult("modify success!");
+        } else {
+            return ResultGenerator.genFailResult(updateBlogResult);
         }
     }
     //upload the images
@@ -100,7 +144,6 @@ public class BlogEditController {
                                              MultipartFile file) throws IOException, URISyntaxException {
 
         File path = new File(ResourceUtils.getURL("classpath:").getPath());
-        System.out.println("path=" + path);
         if(!path.exists()) {
             path = new File("");
         }
@@ -124,7 +167,6 @@ public class BlogEditController {
             i++;
         }
         String fileUrl = MyBlogUtils.getHost(new URI(request.getRequestURL() + "")) + "/upload/" + fileName.substring(0, fileName.indexOf("."))+ suffix;
-        System.out.println("fileUrl=" + fileUrl);
         try {
             file.transferTo(destFile);
         } catch (IOException e) {
