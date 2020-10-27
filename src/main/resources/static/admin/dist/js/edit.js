@@ -22,8 +22,8 @@ $(function () {
   $("#ChangeCoverimg").click(function(){
      var rand = parseInt(Math.random() * 40 + 1);
      $("#RandomCoverImg").attr("src", '/admin/dist/img/rand/' + rand + ".jpg");
-   });
-   new AjaxUpload("#UploadCoverimg",{
+  });
+  new AjaxUpload("#UploadCoverimg",{
        // Location of the server-side upload script
                   action: '/admin/upload/',
                   // File upload name

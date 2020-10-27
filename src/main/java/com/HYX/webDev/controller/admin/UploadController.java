@@ -34,7 +34,6 @@ public class UploadController {
         if(!upload.exists()) {
             upload.mkdirs();
         }
-
         String fileName= file.getOriginalFilename();
         String name =  fileName.substring(0, fileName.indexOf("."));
         String suffix = fileName.substring(fileName.lastIndexOf("."));

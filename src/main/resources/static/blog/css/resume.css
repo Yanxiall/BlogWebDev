@@ -53,9 +53,6 @@ ul{
   list-style: disc;
 }
 
-li{
-   padding-bottom:15px;
-}
 .btn{
     border:2px solid #0099e5;
 }
@@ -96,9 +93,12 @@ color:white;
  padding-right:15px;
  vertical-align:top
 }
-.timeline-style .right-part p,
-.timeline-style .right-part p>* {
- font-size:.92em
+.timeline-style .right-part ul,
+.timeline-style .right-part ul>* {
+ font-size:.92em;
+ color: #707579;
+ margin-top:1rem;
+ padding-left:1rem;
 }
 .timeline-style .divider {
  position:absolute;

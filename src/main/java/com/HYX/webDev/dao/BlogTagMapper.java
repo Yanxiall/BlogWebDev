@@ -14,7 +14,7 @@ public interface BlogTagMapper {
 
     int insertSelective(BlogTag record);
 
-    BlogTag selectByTagName(String tagName);
+    List<BlogTag> selectByTagName(String tagName);
 
     BlogTag selectByPrimaryKey(Integer tagId);
 

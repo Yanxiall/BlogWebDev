@@ -11,12 +11,7 @@ html,body,head,nav,div,h2,p,header,section,img,span,h3,article,aside,input,ul,li
   min-height:100%;
   position:relative;
   padding-bottom:200px;
- }
- p {
-     font-size: 16px;
-     letter-spacing: 1px;
-     line-height: 1.9;
-     color: #707579;
+  font-size:16px;
  }
 footer{
 position:absolute;

@@ -59,16 +59,16 @@ public class BlogServiceImpl implements BlogService {
             //existent blog tags
             List<BlogTag> AllBlogTag = new ArrayList<>();
             for(int i = 0;i < blogtags.length; i++){
-                BlogTag blogtag = blogTagMapper.selectByTagName(blogtags[i]);
+                List<BlogTag> blogtag = blogTagMapper.selectByTagName(blogtags[i]);
 
-                if(blogtag == null)
+                if(blogtag.size() == 0)
                 {
                     BlogTag blogTag = new BlogTag();
                     blogTag.setTagName(blogtags[i]);
                     newBlogTag.add(blogTag);
                 }
                 else{
-                    AllBlogTag.add(blogtag);
+                    AllBlogTag.add(blogtag.get(0));
                 }
             }
             if(!CollectionUtils.isEmpty(newBlogTag)){
@@ -185,10 +185,10 @@ public class BlogServiceImpl implements BlogService {
     //search blog by tag
     @Override
     public PageResult getBlogsPageByTag(int pageNum,String tagName){
-        BlogTag tag = blogTagMapper.selectByTagName(tagName);
+        List<BlogTag> tag = blogTagMapper.selectByTagName(tagName);
         Map params = new HashMap();
         params.put("page",  pageNum);
-        params.put("tagId",tag.getTagId());
+        params.put("tagId",tag.get(0).getTagId());
         //4 record of every page
         params.put("limit", 6);
         params.put("blogStatus", 1);//filter the publish blog
@@ -270,13 +270,13 @@ public class BlogServiceImpl implements BlogService {
         //create relation
         List<BlogTag> allTagsList = new ArrayList<>();
         for (int i = 0; i < tags.length; i++) {
-            BlogTag tag = blogTagMapper.selectByTagName(tags[i]);
-            if (tag == null) {
+            List<BlogTag> tag = blogTagMapper.selectByTagName(tags[i]);
+            if (tag.size() == 0) {
                 BlogTag tempTag = new BlogTag();
                 tempTag.setTagName(tags[i]);
                 tagListForInsert.add(tempTag);
             } else {
-                allTagsList.add(tag);
+                allTagsList.add(tag.get(0));
             }
         }
         if (!CollectionUtils.isEmpty(tagListForInsert)) {
