@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-12 blog-main">
                 <article class="blog-post">
-                    <div class="markdown-body editormd-preview-container">
+                    <div class="markdown-body editormd-preview-container" previewcontainer="true" >
                         <h1 th:text="${blogDetailVo.blogTitle}"></h1>
                         <div class="meta">
                             <i class="fa fa-calendar"></i>
@@ -49,9 +49,6 @@
 <!-- Editor.md -->
 <script th:src="@{/admin/plugins/editor.md-master/editormd.min.js}"></script>
 <script th:src="@{/admin/plugins/editor.md-master/languages/en.js}"></script>
-<script th:src="@{/blog/js/highlight/highlight.pack.js}"></script>
-<script th:src="@{/blog/js/dictionary/dictionary.js}"></script>
-<script th:src="@{/blog/js/highlight/highlight.pack.js}"></script>
 <script type="text/javascript">
     $('.navbar').removeClass('navbar-light');
     $('.navbar').addClass('bg-dark');
@@ -74,7 +71,22 @@
             }, 800);
             return false;
         });
+
     });
+    var  content;
+    content = $('h3').html()[2];
+    console.log(content);
+    $(function ()
+    {
+      if(content === "hardware")
+     {
+       $('img').css({
+       'width':'10%',
+       });
+      }
+
+     });
+
 </script>
 </body>
 </html>

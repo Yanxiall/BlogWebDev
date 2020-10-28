@@ -96,7 +96,7 @@ color:white;
 .timeline-style .right-part ul,
 .timeline-style .right-part ul>* {
  font-size:.92em;
- color: #707579;
+ color: #2c2f31;
  margin-top:1rem;
  padding-left:1rem;
 }
@@ -131,7 +131,7 @@ color:white;
 }
 .timeline-style .item-company {
  display:block;
- color:#aaa;
+ color:#4d4848;
  margin:0 0 4px;
  font-size:12px;
  line-height:1.45em
