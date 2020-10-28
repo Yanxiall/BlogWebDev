@@ -73,20 +73,17 @@
         });
 
     });
-    var  content;
-    content = $('h3').html()[2];
+    var content = $("h3").siblings().eq(7).text();
     console.log(content);
     $(function ()
     {
       if(content === "hardware")
-     {
-       $('img').css({
-       'width':'10%',
-       });
-      }
-
+      {
+         $('img').css({
+          'width':'10%',
+          });
+       }
      });
-
 </script>
 </body>
 </html>

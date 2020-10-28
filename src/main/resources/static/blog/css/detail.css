@@ -96,7 +96,7 @@ blockquote{
 }
 
 .markdown-body p img {
-     width: 80%;
+     max-width: 80%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
