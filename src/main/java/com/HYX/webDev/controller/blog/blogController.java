@@ -166,10 +166,10 @@ public class blogController {
     @GetMapping("/download")
     @ResponseBody
     public String downloadFile(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String fileName = "Yanxia_HE_CV.pdf";
+        String fileName = "CV-Yanxia-EN.pdf";
         if (fileName != null) {
             //set file path
-            ClassPathResource classPathResource = new ClassPathResource("static/blog/Yanxia_HE_CV.pdf");
+            ClassPathResource classPathResource = new ClassPathResource("static/blog/CV-Yanxia-EN.pdf");
             if (classPathResource != null) {
                 InputStream is = classPathResource.getInputStream();
                 response.setContentType("application/force-download");// force download without opening
