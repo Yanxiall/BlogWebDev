@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0685d116-3573-4959-bed8-a1096daa8e3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BlogWebDev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BlogWebDev.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/blog/blogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HYX/webDev/controller/blog/blogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/Yanxia_HE_CV.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/blogdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/blogdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog/CV-Yanxia-EN.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog/CV-Yanxia-EN.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog/resume.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,10 +98,10 @@
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="142" y="86" width="1145" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1301.744@65.24.1301.744" timestamp="1599141692255" />
-    <state x="289" y="178" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599211092053">
+    <state x="289" y="178" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604067849551">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="289" y="178" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1301.744@65.24.1301.744" timestamp="1599211092053" />
+    <state x="289" y="178" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1301.744@65.24.1301.744" timestamp="1604067849551" />
     <state x="528" y="86" key="#com.intellij.ide.util.MemberChooser" timestamp="1599223256286">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
@@ -112,22 +114,22 @@
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="360" y="138" key="FileChooserDialogImpl/65.24.1301.744@65.24.1301.744" timestamp="1603742327230" />
-    <state width="1249" height="244" key="GridCell.Tab.0.bottom" timestamp="1604005720753">
+    <state width="1249" height="352" key="GridCell.Tab.0.bottom" timestamp="1604099504496">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="244" key="GridCell.Tab.0.bottom/65.24.1301.744@65.24.1301.744" timestamp="1604005720753" />
-    <state width="1249" height="244" key="GridCell.Tab.0.center" timestamp="1604005720753">
+    <state width="1249" height="352" key="GridCell.Tab.0.bottom/65.24.1301.744@65.24.1301.744" timestamp="1604099504496" />
+    <state width="1249" height="352" key="GridCell.Tab.0.center" timestamp="1604099504495">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="244" key="GridCell.Tab.0.center/65.24.1301.744@65.24.1301.744" timestamp="1604005720752" />
-    <state width="1249" height="244" key="GridCell.Tab.0.left" timestamp="1604005720752">
+    <state width="1249" height="352" key="GridCell.Tab.0.center/65.24.1301.744@65.24.1301.744" timestamp="1604099504495" />
+    <state width="1249" height="352" key="GridCell.Tab.0.left" timestamp="1604099504495">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="244" key="GridCell.Tab.0.left/65.24.1301.744@65.24.1301.744" timestamp="1604005720752" />
-    <state width="1249" height="244" key="GridCell.Tab.0.right" timestamp="1604005720753">
+    <state width="1249" height="352" key="GridCell.Tab.0.left/65.24.1301.744@65.24.1301.744" timestamp="1604099504495" />
+    <state width="1249" height="352" key="GridCell.Tab.0.right" timestamp="1604099504496">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state width="1249" height="244" key="GridCell.Tab.0.right/65.24.1301.744@65.24.1301.744" timestamp="1604005720753" />
+    <state width="1249" height="352" key="GridCell.Tab.0.right/65.24.1301.744@65.24.1301.744" timestamp="1604099504496" />
     <state width="1249" height="238" key="GridCell.Tab.1.bottom" timestamp="1602017722329">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
