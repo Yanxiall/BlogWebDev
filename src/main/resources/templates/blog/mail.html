@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+</head>
+<body>
+<h1>This is the information from your website：</h1>
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td th:text="${name}">${name}</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td th:text="${Email}">${Email}</td>
+    </tr>
+    <tr>
+        <td>Phone Number</td>
+        <td th:text="${PhoneNumber}">${PhoneNumber}</td>
+    </tr>
+    <tr>
+        <td>Company</td>
+        <td th:text="${Company}">${Company}</td>
+    </tr>
+    <tr>
+        <td>message</td>
+        <td th:text="${message}">${message}</td>
+    </tr>
+</table>
+
+</body>
+</html>

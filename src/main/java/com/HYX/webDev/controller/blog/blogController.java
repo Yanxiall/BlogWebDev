@@ -7,6 +7,7 @@ import com.HYX.webDev.entity.contact;
 import com.HYX.webDev.service.BlogService;
 import com.HYX.webDev.service.BlogTagService;
 import com.HYX.webDev.service.ContactService;
+import com.HYX.webDev.service.MailService;
 import com.HYX.webDev.util.*;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
@@ -33,6 +34,10 @@ public class blogController {
     private BlogService blogService;
     @Resource
     private BlogMapper blogMapper;
+    @Resource
+    private MailService mailService;
+
+
 
     //homepage
     @GetMapping({"/index", "/", "","/index.html"})
@@ -66,12 +71,14 @@ public class blogController {
         contact.setContactCompany(Company);
         contact.setContactMessage(message);
 
+        mailService.sendRegMail(Name,Email,PhoneNumber,Company,message);
         String saveResult = contactService.saveContact(contact);
         if ("success".equals(saveResult)) {
             return ResultGenerator.genSuccessResult("save success!");
         } else {
             return ResultGenerator.genFailResult(saveResult);
         }
+
     }
 
     //project webpage
