@@ -2,9 +2,7 @@
 
 ### Introduction
 
-This project develops my personal blog website(www.yanxia.eu), which is what you are  watching. In this website my personal profile and my project experiences are presented. The website development consists of personal blog  website and its background administration system development.
-
-
+This project develops my personal blog website(www.yanxia.eu). In this website my personal profile and my project experiences are presented. The website development consists of personal blog website and its background administration system development.
 
 ### Features
 
@@ -15,7 +13,7 @@ This project develops my personal blog website(www.yanxia.eu), which is what you
 - Projects detail: Detailed description of projects.
 - Search: Search feature.
 - Resume/CV: View or download my Resume.
-- Contact: My contact information.
+- Contact: Contact information automatically notified via Email.
 
 ##### Background Administration System：
 
@@ -23,3 +21,34 @@ This project develops my personal blog website(www.yanxia.eu), which is what you
 - Categories editing, modification and deletion.
 - Tags editing and deletion.
 - Account management.
+
+### Website View
+
+##### Background Administration website
+
+![administration](administration.gif)
+
+### Technical Detail
+
+##### Front-end Development Technology Stack
+
+- Thymeleaf
+- Bootstrap4
+- HTML5
+- Javascript
+- CSS3
+- jQuery
+- AJAX
+
+##### Back-end Development Technology Stack
+
+- Springboot
+- Maven
+- MyBatis
+- MySQL
+- Restful api
+- Java
+
+##### Software IDE
+
+- IDEA       
