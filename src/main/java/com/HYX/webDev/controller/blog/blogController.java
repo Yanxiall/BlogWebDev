@@ -70,8 +70,9 @@ public class blogController {
         contact.setContactPhoneNumber(PhoneNumber);
         contact.setContactCompany(Company);
         contact.setContactMessage(message);
-
+        //send email
         mailService.sendRegMail(Name,Email,PhoneNumber,Company,message);
+        //save contact information to database
         String saveResult = contactService.saveContact(contact);
         if ("success".equals(saveResult)) {
             return ResultGenerator.genSuccessResult("save success!");

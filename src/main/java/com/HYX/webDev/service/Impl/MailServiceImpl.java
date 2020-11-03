@@ -30,7 +30,7 @@ public class MailServiceImpl  implements MailService {
             mailUtil.sendHtmlMail(from, to, null, null, subject, templateName, content);
         } catch (MessagingException e) {
             e.printStackTrace();
-            System.out.println("邮件发送出错");
+            System.out.println("send email wrong");
         }
     }
 
