@@ -51,4 +51,7 @@ This project develops my personal blog website(www.yanxia.eu). In this website m
 
 ##### Software IDE
 
-- IDEA       
+- IDEA     
+
+##### Deployment
+This project is deployed in Docker that is hosted in a Raspberry pi. In order to enable IPv4 device access in a IPv6 DS-Lite network, a VPS(Virtual Private Server) is used to perform port mapping. Besides, the website is encrypted through https to increase security of data transfer.
